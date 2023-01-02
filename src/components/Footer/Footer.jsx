@@ -68,15 +68,15 @@ export default function Footer() {
                 <h4>Addresss</h4>
                 <div style={{display : "flex"}} className="fc_common_div">
                     <img src={locationLogo} alt="" srcset="" />
-                    <p >373 William Blvd, MA 2721 , USA</p>
+                    <p className='mx-1'>373 William Blvd, MA 2721 , USA</p>
                  </div>
                  <div style={{display : "flex"}} className="fc_common_div">
                     <img src={contactLogo} alt="" srcset="" />
-                    <p>(+001)123-54678</p>
+                    <p className='mx-1'>(+001)123-54678</p>
                  </div>
                  <div style={{display : "flex"}} className="fc_common_div">
                     <img src={emailLogo} alt="" srcset="" />
-                    <p>support@castleacademia.com</p>
+                    <p className='mx-1'>support@castleacademia.com</p>
                  </div>
             </Col>
 
