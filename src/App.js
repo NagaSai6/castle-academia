@@ -8,19 +8,21 @@ import HallOfFame from "./components/HallOfFame/HallOfFame";
 import FactsSection from "./components/FactsSection/FactsSection";
 import FormSection from "./components/FormSection/FormSection";
 import Footer from "./components/Footer/Footer";
+import SimpleForm from "./components/ChatBot/ChatBot";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
       <NavBar />
-      <BannerSectionContainer />
+      {/* <BannerSectionContainer /> */}
       <CoursesSection />
       <HallOfFame />
       <AchieversSection />
       <FactsSection />
       <FormSection />
       <Footer />
+      <SimpleForm />
     </>
   );
 }
