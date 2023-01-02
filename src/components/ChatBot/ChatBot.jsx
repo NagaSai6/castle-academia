@@ -63,6 +63,7 @@ class SimpleForm extends Component {
   render() {
     return (
       <ChatBot
+      width="300px"
       bubbleStyle= {{backgroundColor : "#FDD03B"}}
       floatingStyle={{backgroundColor : "#000"}}
       headerTitle="Castle Academia"
