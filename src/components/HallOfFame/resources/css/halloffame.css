@@ -54,7 +54,7 @@
     z-index: 1;
   }
 
-  .slick-slide > div {
+  /* .slick-slide > div {
     margin: 0 10px;
   }
   .slick-list {
@@ -67,4 +67,4 @@
   }
   .slick-list {
     margin: 0 -5px !important; 
-  }
+  } */
