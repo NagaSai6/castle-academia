@@ -1,5 +1,6 @@
 import "./App.css";
 
+import NavBar from "./components/NavBar/NavBar";
 import BannerSectionContainer from "./components/BannerSection/BannerSectionContainer";
 import CoursesSection from "./components/CoursesSection/CoursesSection";
 import AchieversSection from "./components/AchieversSection/AchieversSection";
@@ -12,6 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
+      <NavBar />
       {/* <BannerSectionContainer /> */}
       <CoursesSection />
       <HallOfFame />

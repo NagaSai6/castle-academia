@@ -1,0 +1,33 @@
+.navbar_container {
+  background: #000000 !important;
+  opacity: 0.9 !important;
+}
+.navbar_header {
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Rounded Mplus 1c Bold";
+}
+.navbar_desc {
+  color: #ffff;
+  font-family: "Rounded Mplus 1c Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navbar_button{
+    width: 160px;
+    height: 56px;
+   
+    
+    /* Primary Color 3
+    
+    Corn Yellow
+    */
+    background: #FDD03B;
+    border-radius: 30px;
+    border: 0 !important;
+}
