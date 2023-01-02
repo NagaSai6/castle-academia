@@ -84,12 +84,12 @@ export default function Footer() {
                 <h4>Get Updates</h4>
                 <InputGroup className="mb-3" style={{width : "70%"}}>
         <Form.Control
-           
+          style={{borderRadius : "0 !important"}}
           placeholder="Enter your email"
           aria-label="Recipient's username"
           aria-describedby="basic-addon2"
         />
-        <InputGroup.Text id="basic-addon2"><FiSend /></InputGroup.Text>
+        <InputGroup.Text id="basic-addon2" style={{borderRadius : "20px"}} ><FiSend /></InputGroup.Text>
       </InputGroup>
 
             </Col>
