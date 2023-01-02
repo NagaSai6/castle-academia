@@ -41,7 +41,7 @@
 }
 @media screen and (max-width: 500px) {
     .fc_sub_container{
-       padding: 40px;
+       padding: 40px !important;
     }
     .fc_services_section{
         margin: 5px;
