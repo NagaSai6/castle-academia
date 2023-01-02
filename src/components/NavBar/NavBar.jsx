@@ -30,7 +30,7 @@ export default function NavBar() {
         >
           <Nav className="ml-4  ">
             <Container className="navbar_countdown_container">
-              <p style={{ color: "#fff" }}>
+              <p style={{ color: "#fff" }} className="navbar_countdown_text">
                 Only last 10 seats are left. Hurry up!! The Sale will end soon.
                 <CountdownTimer targetDate={dateTimeAfterThreeDays} />
               </p>
