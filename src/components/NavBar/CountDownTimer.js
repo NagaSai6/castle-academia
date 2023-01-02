@@ -20,7 +20,7 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
         rel="noopener noreferrer"
         className="countdown-link"
       >
-        <p style={{color : "#FBB034"}}>Next Batch Starts in :</p>
+        <p style={{color : "#FBB034"}} className="navbar_counter_desc">Next Batch Starts in :</p>
         <DateTimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
         <p style={{color : "#FBB034"}}>:</p>
         <DateTimeDisplay value={hours} type={'Hours'} isDanger={false} />
