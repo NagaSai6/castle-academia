@@ -53,3 +53,18 @@
     right: 3% !important;
     z-index: 1;
   }
+
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+ 
+  
+  .slick-slide > div {
+    margin: 0 5px !important;
+  }
+  .slick-list {
+    margin: 0 -5px !important; 
+  }
