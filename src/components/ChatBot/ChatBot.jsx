@@ -156,8 +156,9 @@ class SimpleForm extends Component {
             id: 'update-fields',
             options: [
               { value: 'name', label: 'Name', trigger: 'update-name' },
-              { value: 'gender', label: 'Gender', trigger: 'update-gender' },
-              { value: 'age', label: 'Age', trigger: 'update-age' },
+              { value: 'courses', label: 'Courses', trigger: 'update-courses' },
+              { value: 'phoneNumber', label: 'Phone Number', trigger: 'update-phoneNumber' },
+              { value: 'email', label: 'Email', trigger: 'update-email' },
             ],
           },
           {
@@ -166,13 +167,18 @@ class SimpleForm extends Component {
             trigger: '7',
           },
           {
-            id: 'update-gender',
-            update: 'gender',
+            id: 'update-courses',
+            update: 'courses',
             trigger: '7',
           },
           {
-            id: 'update-age',
-            update: 'age',
+            id: 'update-phoneNumber',
+            update: 'phoneNumber',
+            trigger: '7',
+          },
+          {
+            id: 'update-email',
+            update: 'email',
             trigger: '7',
           },
           {
