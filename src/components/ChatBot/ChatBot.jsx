@@ -8,20 +8,21 @@ class Review extends Component {
 
     this.state = {
       name: '',
-      gender: '',
-      age: '',
+      courses : '',
+      phoneNumber : '',
+      email : ''
     };
   }
 
   componentWillMount() {
     const { steps } = this.props;
-    const { name, gender, age } = steps;
+    const { name, courses, phoneNumber,email} = steps;
 
-    this.setState({ name, gender, age });
+    this.setState({ name, courses, phoneNumber,email });
   }
 
   render() {
-    const { name, gender, age } = this.state;
+    const { name, courses, phoneNumber,email} = this.state;
     return (
       <div style={{ width: '100%' }}>
         <h3>Summary</h3>
@@ -32,12 +33,16 @@ class Review extends Component {
               <td>{name.value}</td>
             </tr>
             <tr>
-              <td>Gender</td>
-              <td>{gender.value}</td>
+              <td>Courses</td>
+              <td>{courses.value}</td>
             </tr>
             <tr>
-              <td>Age</td>
-              <td>{age.value}</td>
+              <td>Phone Number</td>
+              <td>{phoneNumber.value}</td>
+            </tr>
+            <tr>
+              <td>email</td>
+              <td>{email.value}</td>
             </tr>
           </tbody>
         </table>
@@ -72,31 +77,32 @@ class SimpleForm extends Component {
           },
           {
             id: '3',
-            message: 'Hi {previousValue}! What is your gender?',
-            trigger: 'gender',
+            message: 'Hi {previousValue}! What is your Interested Course?',
+            trigger: 'courses',
           },
           {
-            id: 'gender',
+            id: 'courses',
             options: [
-              { value: 'male', label: 'Male', trigger: '5' },
-              { value: 'female', label: 'Female', trigger: '5' },
+              { value: 'CRT Training', label: 'CRT Training', trigger: '5' },
+              { value: 'Start Up Plan', label: 'Start-Up Plan', trigger: '5' },
+              { value: 'Abroad Studies', label: 'Abroad Studies', trigger: '5' },
             ],
           },
           {
             id: '5',
-            message: 'How old are you?',
-            trigger: 'age',
+            message: 'Enter your phone number ',
+            trigger: 'phoneNumber',
           },
           {
-            id: 'age',
+            id: 'phoneNumber',
             user: true,
-            trigger: '7',
+            trigger: '100',
             validator: (value) => {
-              if (isNaN(value)) {
-                return 'value must be a number';
-              } else if (value < 0) {
-                return 'value must be positive';
-              } else if (value > 120) {
+              if (!value.length) {
+                return 'Enter Valid Number';
+              } else if (value.length < 6) {
+                return 'Enter Valid Phone Number';
+              } else if (value.length > 120) {
                 return `${value}? Come on!`;
               }
 
@@ -104,10 +110,22 @@ class SimpleForm extends Component {
             },
           },
           {
+            id  : '100',
+            message : 'Enter your Email Address',
+            trigger : 'email'
+          },
+          {
+            id : 'email',
+            user : true,
+            trigger : '7'
+
+         },
+          {
             id: '7',
             message: 'Great! Check out your summary',
             trigger: 'review',
           },
+
           {
             id: 'review',
             component: <Review />,
