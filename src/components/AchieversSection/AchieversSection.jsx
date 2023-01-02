@@ -20,22 +20,22 @@ export default function AchieversSection() {
         We just got featured in the following magazines and it has been the most incredible journey. We work with the best fashion magazines across the world 
       </p>
       <Row className="as_logo_parent_container">
-        <Col className='as_logo_container'> 
+        <Col className='as_logo_container mx-2 my-2'> 
             <img src={ dribbble_logo} alt="" srcset="" />
         </Col>
-        <Col className='as_logo_container'> 
+        <Col className='as_logo_container mx-2 my-2'> 
             <img src={ google_logo} alt="" srcset="" />
         </Col>
-        <Col className='as_logo_container'> 
+        <Col className='as_logo_container mx-2 my-2'> 
             <img src={ amazon_logo} alt="" srcset="" />
-        </Col>
-        <Col className='as_logo_container'> 
+        </Col> 
+        <Col className='as_logo_container mx-2 my-2' > 
             <img src={ bb_logo} alt="" srcset="" />
         </Col>
-        <Col className='as_logo_container'> 
+        <Col className='as_logo_container mx-2 my-2'> 
             <img src={ ms_logo} alt="" srcset="" />
         </Col>
-        <Col className='as_logo_container'> 
+        <Col className='as_logo_container mx-2 my-2'> 
             <img src={ linkedin_logo} alt="" srcset="" />
         </Col>
       </Row>
