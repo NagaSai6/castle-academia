@@ -3,10 +3,15 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import siginLogo from "./signin.svg";
+import CountdownTimer from "./CountDownTimer";
 
 import "./navbar.css";
 
 export default function NavBar() {
+    const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
+    const NOW_IN_MS = new Date().getTime();
+  
+    const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
   return (
     <Navbar bg="dark" expand="lg" className="navbar_container" fixed="top">
       <Container>
@@ -23,10 +28,11 @@ export default function NavBar() {
           id="basic-navbar-nav"
           className="justify-content-center"
         >
-          <Nav className="ml-4 justify-content-center ">
+          <Nav className="ml-4  ">
             <Container className="navbar_countdown_container">
-              <p style={{ color: "red" }}>
+              <p style={{ color: "#fff" }}>
                 Only last 10 seats are left. Hurry up!! The Sale will end soon.
+                <CountdownTimer targetDate={dateTimeAfterThreeDays} />
               </p>
             </Container>
 
