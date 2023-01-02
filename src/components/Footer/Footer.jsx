@@ -75,7 +75,7 @@ export default function Footer() {
                     <p>(+001)123-54678</p>
                  </div>
                  <div style={{display : "flex"}} className="fc_common_div">
-                    <img src={locationLogo} alt="" srcset="" />
+                    <img src={emailLogo} alt="" srcset="" />
                     <p>support@castleacademia.com</p>
                  </div>
             </Col>
