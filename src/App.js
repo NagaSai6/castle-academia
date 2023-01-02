@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import BannerSectionContainer from './components/BannerSection/BannerSectionContainer';
+import CoursesSection from './components/CoursesSection/CoursesSection';
+import AchieversSection from './components/AchieversSection/AchieversSection';
+import FactsSection from './components/FactsSection/FactsSection';
+import Footer from './components/Footer/Footer';
+
+
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <BannerSectionContainer />
+     <CoursesSection />
+     <AchieversSection />
+     <FactsSection />
+
+     <Footer />
+     </>
   );
 }
 

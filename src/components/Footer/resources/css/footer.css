@@ -1,0 +1,37 @@
+.footer-container{
+    width: 100% !important;
+     background-color: blue;
+     background-image: url('../../../BannerSection/resources/images/rectangle-24@2x.png');
+}
+.fc_sub_container{
+    padding: 50px 100px;
+   margin: 10px auto;
+   display: flex;
+   justify-content: space-around;
+}
+.fc_part1_h1{
+    margin: 0;
+}
+.fc_part1_header{
+    color: #fff;
+}
+
+.fc_part1_desc{
+    color: #fff;
+
+}
+.fc_social_media_button{
+    padding: 6px;
+}
+.fc_common_div{
+ 
+    align-items:flex-start ;
+}
+@media screen and (max-width: 500px) {
+    .fc_sub_container{
+       padding: 40px;
+    }
+    .fc_services_section{
+        margin: 5px;
+    }
+     }
