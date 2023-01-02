@@ -18,10 +18,7 @@ export default function Footer() {
   return (
     <div className="footer-container">
       <Row className="fc_sub_container">
-        <Col
-          style={{ justifyContent: "center", paddingLeft: "100px" }}
-          className="px-4"
-        >
+        <Col style={{ justifyContent: "center" }}>
           <h1 className="fc_part1_h1">
             CASTLE <span className="fc_part1_header">ACADEMIA</span>
           </h1>
