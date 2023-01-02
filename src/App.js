@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <NavBar />
-      {/* <BannerSectionContainer /> */}
+      <BannerSectionContainer />
       <CoursesSection />
       <HallOfFame />
       <AchieversSection />
