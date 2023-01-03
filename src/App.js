@@ -8,7 +8,7 @@ import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Footer from "./components/Footer/Footer";
 import ChatBotForm from "./components/ChatBot/ChatBot";
 
-import { BrowserRouter as Router, Routes,Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -16,12 +16,12 @@ function App() {
       <NavBar />
 
       <Routes>
-         <Route path="/" element={  <HomePage />}/>
-         <Route path="/sign-in" element={  <SignIn />}/>
-         <Route path="*" element={  <ErrorPage />}/>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
-    
-<ChatBotForm />
+
+      <ChatBotForm />
     </Router>
   );
 }
