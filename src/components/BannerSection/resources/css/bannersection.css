@@ -1,40 +1,40 @@
-html{
-  height: 100% !important;
-}
 .bs_parent-container {
   background: url("../images/rectangle-24@2x.png");
   position: relative;
-  width: 100% !important;
-  height: 904px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  margin-top: 110px;
+  padding: 50px;
+  box-sizing: border-box;
 }
-.bs_text-container {
+/* .bs_text-container {
   position: absolute;
   width: 823px !important;
   height: 400px;
   left: 170px;
   top: 285px;
-}
+} */
 .bs_team-heads-container {
-  position: absolute;
+  /* position: absolute;
   width: 585px !important;
   height: 659px;
   left: 1175px;
-  top: 155px;
+  top: 155px; */
+ 
+  justify-content: center;
 }
 .bs_text_desc1 {
   color: #f9f9f9;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 14px;
   line-height: 32px;
 }
 .bs_text_desc2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 65px;
+  font-size: 40px;
   line-height: 80px;
   letter-spacing: 0.05em;
   color: #ffffff;
@@ -50,16 +50,17 @@ html{
   color: #ffffff;
   background: #2d2d2d;
   border-radius: 40px;
-  width: 235px !important;
-  height: 65px !important;
+  width: 200px !important;
+  height: 60px !important;
   margin-top: 30px;
+  border: 0 ;
 }
 .bs_team_member_card {
   width: 585px !important;
   height: 659px !important;
   /* border: 1px solid rgba(0, 0, 0, 0.2); */
   /* Pink Shadow */
-  
+
   filter: drop-shadow(0px 15px 24px rgba(250, 3, 105, 0.08));
   border-radius: 20px 20px 0px 0px;
 }
@@ -146,21 +147,83 @@ html{
 .bs_desc_section {
   /* position: absolute; */
   /* left: 30; */
-  padding: 30px 35px 30px 25px;
+  padding: 20px 10px 25px 20px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0px 15px 24px rgba(250, 3, 105, 0.08);
   border-radius: 8px;
 }
 
-.bs_about_section-sub{
+.bs_about_section-sub {
   margin-top: 15px;
   margin-left: 15px;
   display: flex;
-  justify-content: flex-start;
+  justify-content:flex-start
 }
-.bs_about_section-logo{
-  width: 16px;
-  height: 22px;
+.bs_about_section-logo {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+.bs_about_section_mobile{
+  display: flex;
+ align-items: center;
+}
+.bs_about_section_achieve{
+  width: 122px;
+  font-weight: bold;
+}
 
+@media screen and (max-width: 500px) {
+  .bs_parent-container {
+    padding: 10px;
+    margin-top: 100px;
+  }
+  .bs_team_member_card {
+    height: auto !important;
+    width: auto !important;
+  }
+
+  .carousel-control-next {
+    margin-right: auto !important;
+  }
+  .carousel-control-prev {
+    margin-left: auto !important;
+  }
+  .bs_team_title {
+    top: 80px;
+    left: 20px;
+  }
+
+  .bs_team_designation {
+    top: 105px;
+    left: 20px;
+  }
+  .bs_team_social_media {
+    top: 150px;
+    left: 20px;
+  }
+
+  .bs_about_section_achieve{
+    font-size: 13px;
+    font-weight: bold;
+    width: 110px;
+    margin-bottom:  0 !important;
+  }
+  .bs_about_section-sub{
+    display: block !important;
+  }
+  .bs_team-heads-container{
+    margin-top: 10px;
+  }
+  .bs_about_section_edu{
+    font-size: small;
+  }
+  .bs_about_carousel_desc{
+    font-size: small;
+  }
+}
+
+p{
+  margin: 0 !important;
 }

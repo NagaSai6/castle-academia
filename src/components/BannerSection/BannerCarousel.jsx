@@ -6,7 +6,7 @@ import twitterLogo from "./resources/images/twitter.png";
 import instagramLogo from "./resources/images/instagram.png";
 import achievementLogo from "./resources/images/badge.png";
 import educationLogo from "./resources/images/mortarboard.png";
-import experienceLogo  from "./resources/images/portfolio.png";
+import experienceLogo from "./resources/images/portfolio.png";
 
 export default function BannerCarousel(props) {
   if (props.teamData.length) {
@@ -34,31 +34,46 @@ export default function BannerCarousel(props) {
             <Card.Body>
               <div className="bs_about_section">
                 <div className="bs_about_section-sub">
-                  <img className="bs_about_section-logo" src={achievementLogo} alt="" srcset="" />
-                  <p className="mx-2">
-                    <b>Achievements :</b>{" "}
-                  </p>
-                  <p> {item.achievements}</p>
+                  <img
+                    className="bs_about_section-logo"
+                    src={achievementLogo}
+                    alt=""
+                    srcset=""
+                  />
+                  <div className="bs_about_section_mobile">
+                    <p className="bs_about_section_achieve">Achievements :</p>
+                    <p className="bs_about_section_edu"> {item.achievements}</p>
+                  </div>
                 </div>
                 <div className="bs_about_section-sub">
-                  <img className="bs_about_section-logo"  src={educationLogo} alt="" srcset="" />
-                  <p className="mx-2">
-                    <b>Education :</b>{" "}
-                  </p>
-                  <p> {item.education}</p>
+                  <img
+                    className="bs_about_section-logo"
+                    src={educationLogo}
+                    alt=""
+                    srcset=""
+                  />
+                  <div className="bs_about_section_mobile">
+                    <p className="bs_about_section_achieve">Education  :</p>
+                    <p className="bs_about_section_edu"> {item.education}</p>
+                  </div>
                 </div>
                 <div className="bs_about_section-sub">
-                  <img className="bs_about_section-logo"  src={experienceLogo} alt="" srcset="" />
-                  <p className="mx-2">
-                    <b>Experience :</b>{" "}
-                  </p>
-                  <p>{item.experience}</p>
+                  <img
+                    className="bs_about_section-logo"
+                    src={experienceLogo}
+                    alt=""
+                    srcset=""
+                  />
+                  <div className="bs_about_section_mobile">
+                    <p className="bs_about_section_achieve">Experience :</p>
+                    <p className="bs_about_section_edu">{item.experience}</p>
+                  </div>
                 </div>
               </div>
 
               <div className="bs_desc_section">
                 <h6>{item.descHeader}</h6>
-                <p>{item.desc}</p>
+                <p className="bs_about_carousel_desc">{item.desc}</p>
               </div>
             </Card.Body>
           </Card>
