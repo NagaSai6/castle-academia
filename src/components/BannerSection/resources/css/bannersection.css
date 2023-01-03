@@ -100,19 +100,19 @@
 
 .carousel-indicators {
   align-items: center !important;
-  margin-bottom: -80px !important;
+  margin-bottom: -20px !important;
 }
-.carousel-indicators > button {
+/* .carousel-indicators > button {
   border-radius: 50% !important;
   height: 10px !important;
   width: 10px !important;
-  background-color: #956a1f;
+  background-color: #956a1f !important;
 }
 .carousel-indicators > button[class="active"] {
   height: 20px !important;
   width: 20px !important;
   background-color: #000 !important;
-}
+} */
 
 .bs_team_title {
   position: absolute;
@@ -178,7 +178,7 @@
 
 @media screen and (max-width: 500px) {
   .bs_parent-container {
-    padding: 10px;
+    padding: 20px;
     margin-top: 83px;
   }
   .bs_team_member_card {

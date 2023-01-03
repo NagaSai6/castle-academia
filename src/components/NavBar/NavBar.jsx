@@ -28,7 +28,7 @@ export default function NavBar() {
           id="basic-navbar-nav"
           className="justify-content-center"
         >
-          <Nav className="ml-4  ">
+          <Nav className="mx-auto ">
             <Container className="navbar_countdown_container">
               <p style={{ color: "#fff" }} className="navbar_countdown_text">
                 Only last 10 seats are left. Hurry up!! The Sale will end soon.
@@ -36,7 +36,10 @@ export default function NavBar() {
               </p>
             </Container>
 
-            <Nav.Link href="/sign-in" className="my-auto mx-auto">
+            
+          </Nav>
+          <Nav className="ml-auto">
+          <Nav.Link href="/sign-in" className="my-auto mx-auto">
               <button className="navbar_button">
                 <img src={siginLogo} />
                 <span className="mx-2">Sign In</span>
