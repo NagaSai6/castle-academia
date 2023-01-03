@@ -7,13 +7,14 @@
   padding: 50px;
   box-sizing: border-box;
 }
-/* .bs_text-container {
-  position: absolute;
+.bs_text-container {
+  /* position: absolute;
   width: 823px !important;
   height: 400px;
   left: 170px;
-  top: 285px;
-} */
+  top: 285px; */
+  /* padding: 40px !important; */
+}
 .bs_team-heads-container {
   /* position: absolute;
   width: 585px !important;

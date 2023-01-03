@@ -14,7 +14,7 @@
 }
 .cs_card_image {
   background: #fdd03b;
-  max-height : 240px;
+  min-height : 140px !important;
 }
 .cs_desc {
   font-family: "Roboto";
@@ -42,6 +42,17 @@
   line-height: 24px;
 }
 
+.cs_card_body{
+  background-color: #2D2D2D;
+ border-bottom-left-radius: 15px;
+ border-bottom-right-radius: 15px;
+}
+.cs_card_text{
+  color: #ffff;
+}
+/* .cs_card{
+  min-height: 297px !important;
+} */
 
 @media screen and (max-width: 500px) {
  .cs_container{
