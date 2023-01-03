@@ -19,23 +19,23 @@ export default function FormSection() {
                 <Col>
                   <Form.Group className="mb-3" controlId="">
                     <Form.Label>Full Name</Form.Label>
-                    <Form.Control type="text" placeholder="Enter Name" />
+                    <Form.Control type="text" placeholder="Enter Name" className="fsc_control" />
                   </Form.Group>
                 </Col>
                 <Col>
                   <Form.Group className="mb-3" controlId="">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter Email " />
+                    <Form.Control type="email" placeholder="Enter Email " className="fsc_control" />
                   </Form.Group>
                 </Col>
               </Row>
               <Form.Group className="mb-3" controlId="">
                 <Form.Label>Phone</Form.Label>
-                <Form.Control type="number" placeholder="Enter Phone number" />
+                <Form.Control type="number" placeholder="Enter Phone number" className="fsc_control" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="">
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows="5" placeholder="Enter your Query" />
+                <Form.Control as="textarea" rows="5" placeholder="Enter your Query" className="fsc_control" />
               </Form.Group>
 
               <button type="submit" className="fsc_submit_button">Submit</button>

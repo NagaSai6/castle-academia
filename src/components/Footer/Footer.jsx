@@ -88,7 +88,7 @@ export default function Footer() {
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
             />
-            <InputGroup.Text id="basic-addon2" style={{ borderRadius: "20px" }}>
+            <InputGroup.Text id="basic-addon2" >
               <FiSend />
             </InputGroup.Text>
           </InputGroup>
