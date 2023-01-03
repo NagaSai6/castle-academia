@@ -15,7 +15,7 @@
 .fc_sub_container{
     padding: 50px 0 50px 100px !important;
     background-image: url('../../../BannerSection/resources/images/rectangle-24@2x.png');
-   margin: 10px auto;
+   margin: 10px auto 0 auto;
    display: flex;
    justify-content: space-around;
    overflow: hidden;
