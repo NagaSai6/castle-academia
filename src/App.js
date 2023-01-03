@@ -1,28 +1,19 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import NavBar from "./components/NavBar/NavBar";
-import BannerSectionContainer from "./components/BannerSection/BannerSectionContainer";
-import CoursesSection from "./components/CoursesSection/CoursesSection";
-import AchieversSection from "./components/AchieversSection/AchieversSection";
-import HallOfFame from "./components/HallOfFame/HallOfFame";
-import FactsSection from "./components/FactsSection/FactsSection";
-import FormSection from "./components/FormSection/FormSection";
+import HomePage from "./components/HomePage/HomePage";
 import Footer from "./components/Footer/Footer";
-import SimpleForm from "./components/ChatBot/ChatBot";
+import ChatBotForm from "./components/ChatBot/ChatBot";
 
-import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   return (
     <>
       <NavBar />
-      {/* <BannerSectionContainer /> */}
-      <CoursesSection />
-      <HallOfFame />
-      <AchieversSection />
-      <FactsSection />
-      <FormSection />
+      <HomePage />
       <Footer />
-      <SimpleForm />
+      <ChatBotForm />
     </>
   );
 }

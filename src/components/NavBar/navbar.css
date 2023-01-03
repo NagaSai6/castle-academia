@@ -38,12 +38,11 @@
   border-radius: 0.25rem;
   text-decoration: none;
   color: #000;
-
 }
 
 .show-counter .countdown {
   line-height: 1.25rem;
-  /* padding: 0 0.75rem 0 0.75rem; */
+
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -72,20 +71,17 @@
   text-align: center;
 }
 
-
-
-
 @media screen and (max-width: 500px) {
-    .navbar_counter_value{
-     font-size: large;
-    }
-    .navbar_counter_type{
+  .navbar_counter_value {
+    font-size: large;
+  }
+  .navbar_counter_type {
     font-size: x-small !important;
-    }
-    .navbar_counter_desc{
-     font-size: small !important;
-    }
-    .show-counter .countdown-link{
-        margin-top: 5px;
-    }
-     }
+  }
+  .navbar_counter_desc {
+    font-size: small !important;
+  }
+  .show-counter .countdown-link {
+    margin-top: 5px;
+  }
+}

@@ -59,7 +59,7 @@ Review.defaultProps = {
   steps: undefined,
 };
 
-class SimpleForm extends Component {
+class ChatBotForm extends Component {
   render() {
     return (
       <ChatBot
@@ -193,4 +193,4 @@ class SimpleForm extends Component {
   }
 }
 
-export default SimpleForm;
+export default ChatBotForm;
