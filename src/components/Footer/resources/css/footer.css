@@ -34,9 +34,11 @@
 }
 .fc_social_media_button{
     padding: 6px;
+  
 }
 .fc_common_div{
- 
+    margin-top: 5px;
+    margin-bottom: 5px;
     align-items:flex-start ;
 }
 @media screen and (max-width: 500px) {

@@ -15,6 +15,7 @@ import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { Row, Col } from "react-bootstrap";
 export default function Footer() {
+  const year = new Date().getFullYear();
   return (
     <div className="footer-container">
       <Row className="fc_sub_container g-0">
@@ -25,7 +26,7 @@ export default function Footer() {
           <p className="fc_part1_desc">A home for your dream career</p>
 
           <p style={{ display: "inline-flex" }}>
-            Copyright @ 2023 Castle Academia.
+            Copyright @ {year} Castle Academia.
           </p>
           <p>All rights reserved.</p>
           <div className="fc_team_social_media">
