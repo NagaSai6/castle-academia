@@ -45,6 +45,12 @@ export default function NavBar() {
                 <span className="mx-2">Sign In</span>
               </button>
             </Nav.Link>
+            <Nav.Link href="/courses-overview" className="my-auto mx-auto">
+              <button className="navbar_button">
+                <img src={siginLogo} />
+                <span className="mx-2">Courses Overview</span>
+              </button>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
