@@ -15,7 +15,7 @@ export default function NavBar() {
   return (
     <Navbar bg="dark" expand="lg" className="navbar_container" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <div className="navbar_navbrand">
             <h1 className="navbar_header">
               <span style={{ color: "#FDD03B" }}>CASTLE</span> ACADEMIA
@@ -36,10 +36,10 @@ export default function NavBar() {
               </p>
             </Container>
 
-            <Nav.Link href="#link" className="ml-auto">
+            <Nav.Link href="/sign-in" className="my-auto mx-auto">
               <button className="navbar_button">
                 <img src={siginLogo} />
-                <span className="mx-2">Sign Up</span>
+                <span className="mx-2">Sign In</span>
               </button>
             </Nav.Link>
           </Nav>
