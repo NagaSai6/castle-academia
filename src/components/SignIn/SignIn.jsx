@@ -2,12 +2,17 @@ import React from "react";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
+import Cookies from "universal-cookie";
 
 import "./resources/css/signin.css";
 import { useState } from "react";
+import axios from "axios";
 
 export default function SignIn() {
+
+  const cookies = new Cookies();
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const [login,setLogin] = useState(false)
 
   function handleEmailChange(e) {
     setFormData({ ...formData, email: e.target.value });
@@ -16,9 +21,29 @@ export default function SignIn() {
     setFormData({ ...formData, password: e.target.value });
   }
 
-  function handleSignInFormSubmission() {
+  function handleSignInFormSubmission(e) {
+    e.preventDefault();
+
     if (formData.email.length != 0 && formData.password.length) {
       // make  a post request
+      const configuration = {
+        method: "post",
+        url: "https://castle-academia-server.onrender.com/sign-in",
+        data: {
+          email : formData.email,
+          password : formData.password,
+        },
+      };
+      axios(configuration).then((result)=>{
+           console.log(result);
+           setLogin(true);
+           cookies.set("auth-token", result.data.token, {
+            path: "/",
+          });
+          window.location.href = '/courses-overview';
+      }).catch((e)=>{
+         alert("Sign in Failed Try Again")
+      })
     } else {
      return ;
     }
@@ -41,6 +66,7 @@ export default function SignIn() {
                 required
                 type="email"
                 defaultValue=""
+                value={formData.email}
                 placeholder="Enter your email"
               />
             </Col>
@@ -57,6 +83,7 @@ export default function SignIn() {
             <Col sm="10">
               <Form.Control
                 onChange={handlePasswordChange}
+                value={formData.password}
                 type="password"
                 placeholder="Password"
                 required
