@@ -24,7 +24,7 @@ function SendMail(props) {
     .catch((err) => {
       console.log(err);
     });
-  return "";
+  return "Encrypting Your Data. Please wait..";
 }
 
 class Review extends Component {
