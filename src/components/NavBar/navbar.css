@@ -53,13 +53,28 @@
 }
 #dropdown-item-button{
   background-color: #000 !important;
-  width: auto !important;
+  width:260px !important;
   border: 0 !important;
-  
+}
+.dropdown-item:hover{
+ background-color: #FDD03B;
+}
+.dropdown-menu{
+  width: 260px !important;
+}
+.nav_message_number{
+  color : #FDD03B !important;
+  height: 24px !important;
+    width: 24px !important;
+    text-align: center;
 }
 .nav_user_container{
   border-radius: 50%;
   border: 10px  #FDD03B !important;
+  width: 200px !important;
+}
+.nav_drop_down_item_text{
+  padding: 0 !important;
 }
 .show-counter .countdown.danger {
   color: #ff0000;
@@ -96,5 +111,8 @@
   }
   .show-counter .countdown-link {
     margin-top: 5px;
+  }
+  #dropdown-item-button{
+    width: auto !important;
   }
 }
