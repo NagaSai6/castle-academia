@@ -9,7 +9,7 @@ import { Circles } from "react-loader-spinner";
 
 export default function FormSection() {
   const [formSubmit, setFormSubmit] = useState(false);
-  const [isFormSubmitted,setIsFormSubmitted] = useState(false);
+  const [show, setShow] = useState(false);
   const [formData,setFormData] = useState({
     name : '',
     email : '',
@@ -31,8 +31,9 @@ export default function FormSection() {
   }
   function handleFormSubmit(e){
     e.preventDefault();
-    setIsFormSubmitted(false);
+
     setFormSubmit(true);
+    setShow(false);
     const configuration = {
       method: "post",
       url: "https://castle-academia-server.onrender.com/send-mail-form-submission",
@@ -41,7 +42,7 @@ export default function FormSection() {
 
     axios(configuration).then((result)=>{
       setFormSubmit(false);
-      setIsFormSubmitted(true)
+      setShow(true);
       setFormData({
         name : '',
         email : '',
@@ -66,7 +67,7 @@ export default function FormSection() {
         </Col>
         <Col>
           <div className="fsc_form_container">
-            {isFormSubmitted && <Alert key={'sucess'} variant="success" />}
+            {(show) ? <Alert onClose={() => setShow(false)} key={'sucess'} variant="success" dismissible> Submitted Successfully </Alert> : ''}
             <Form onSubmit={handleFormSubmit}>
                 <h2 className="my-3">Enter Details</h2>
               <Row>
