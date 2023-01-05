@@ -110,6 +110,12 @@ class ChatBotForm extends Component {
             id: "name",
             user: true,
             trigger: "3",
+            validator : (value)=>{
+              if(value.length === 0){
+                return "Name has atleast 3 characters"
+              }
+              return true
+            }
           },
           {
             id: "3",
@@ -157,6 +163,11 @@ class ChatBotForm extends Component {
           {
             id: "email",
             user: true,
+            validator : (value)=>{
+              if(value.length === 0 ||  !isNaN(value)){
+                return "Invalid Email Adress "
+              }
+            },
             trigger: "7",
           },
           {

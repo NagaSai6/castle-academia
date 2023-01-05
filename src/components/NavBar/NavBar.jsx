@@ -33,7 +33,7 @@ export default function NavBar(props) {
 
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
   return (
-    <Navbar bg="dark" expand="lg" className="navbar_container" fixed="top">
+    <Navbar bg="dark" expand="md" className="navbar_container" fixed="top">
       <Container>
         <Navbar.Brand href="/">
           <div className="navbar_navbrand">

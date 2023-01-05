@@ -1,6 +1,10 @@
 .navbar_container {
-  background: #000000 !important;
-  opacity: 0.9 !important;
+  /* background: #000000 !important;
+  opacity: 0.9 !important; */
+}
+.navbar-toggler{
+  border: 2px solid #fdd03b !important;
+  background: #fff !important;
 }
 .navbar_header {
   color: #fff;
