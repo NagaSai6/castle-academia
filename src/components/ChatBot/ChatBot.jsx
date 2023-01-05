@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import ChatBot from "react-simple-chatbot";
 import axios from "axios";
-
+import validator from "validator";
 function SendMail(props) {
   const { steps } = props;
   const { name, courses, phoneNumber, email } = steps;
@@ -166,6 +166,9 @@ class ChatBotForm extends Component {
             validator : (value)=>{
               if(value.length === 0 ||  !isNaN(value)){
                 return "Invalid Email Adress "
+              }
+              if(!validator.isEmail(value)){
+                return "Enter a Valid Email"
               }
               return true;
             },
