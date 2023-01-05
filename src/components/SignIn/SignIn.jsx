@@ -36,7 +36,6 @@ export default function SignIn() {
         },
       };
       axios(configuration).then((result)=>{
-           console.log(result);
            setLogin(true);
            cookies.set("auth-token", result.data.token, {
             path: "/",
