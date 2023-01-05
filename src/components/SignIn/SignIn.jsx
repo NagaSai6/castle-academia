@@ -7,6 +7,7 @@ import { Circles } from "react-loader-spinner";
 import "./resources/css/signin.css";
 import { useState } from "react";
 import axios from "axios";
+import validator from "validator";
 
 export default function SignIn() {
 
@@ -23,9 +24,15 @@ export default function SignIn() {
 
   function handleSignInFormSubmission(e) {
     e.preventDefault();
-    setLogin(true);
-
+   
+    
     if (formData.email.length != 0 && formData.password.length) {
+
+      if(!validator.isEmail(formData.email)){
+        setLogin(false);
+        return alert("Invalid Email Address")
+      }
+      setLogin(true);
       // make  a post request
       const configuration = {
         method: "post",
