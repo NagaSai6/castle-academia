@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Cookies from "universal-cookie";
-
+import { Circles } from "react-loader-spinner";
 import "./resources/css/signin.css";
 import { useState } from "react";
 import axios from "axios";
@@ -23,6 +23,7 @@ export default function SignIn() {
 
   function handleSignInFormSubmission(e) {
     e.preventDefault();
+    setLogin(true);
 
     if (formData.email.length != 0 && formData.password.length) {
       // make  a post request
@@ -42,7 +43,8 @@ export default function SignIn() {
           });
           window.location.href = '/courses-overview';
       }).catch((e)=>{
-         alert("Sign in Failed Try Again")
+         alert("Sign in Failed Try Again");
+         setLogin(false);
       })
     } else {
      return ;
@@ -91,6 +93,7 @@ export default function SignIn() {
             </Col>
           </Form.Group>
           <button type="submit" className="fsc_submit_button mx-auto">
+           {login &&  <Circles height={20} width={20} color="#000"/>}
             Sign In
           </button>
         </Form>
