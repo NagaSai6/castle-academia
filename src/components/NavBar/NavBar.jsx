@@ -17,11 +17,15 @@ export default function NavBar(props) {
   const cookies = new Cookies();
   const token = cookies.get("auth-token");
 
-  console.log(props.userData);
 
   if (token) {
-    var email = props.userData.IsuserExist.email;
+    var email = props.userData.data.email;
     var name = email.split("@")[0];
+  }
+
+  function triggerLogOut(){
+    cookies.remove('auth-token',[{path : '/'}]);
+    window.location.href = '/';
   }
 
   const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
@@ -127,7 +131,7 @@ export default function NavBar(props) {
                 <Dropdown.Item as="button">Certifications</Dropdown.Item>
                 <Dropdown.Divider />
                 <Dropdown.Item as="button">settings</Dropdown.Item>
-                <Dropdown.Item as="button">Log out</Dropdown.Item>
+                <Dropdown.Item as="button" onClick={triggerLogOut}>Log out</Dropdown.Item>
               </DropdownButton>
             )}
           </Nav>
