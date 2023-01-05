@@ -130,6 +130,7 @@ export default function NavBar(props) {
                 <Dropdown.Item as="button">Manage Subscription</Dropdown.Item>
                 <Dropdown.Item as="button">Certifications</Dropdown.Item>
                 <Dropdown.Divider />
+                <Dropdown.Item as="a" href="/courses-overview">Courses Overview</Dropdown.Item>
                 <Dropdown.Item as="button">settings</Dropdown.Item>
                 <Dropdown.Item as="button" onClick={triggerLogOut}>Log out</Dropdown.Item>
               </DropdownButton>
