@@ -167,6 +167,7 @@ class ChatBotForm extends Component {
               if(value.length === 0 ||  !isNaN(value)){
                 return "Invalid Email Adress "
               }
+              return true;
             },
             trigger: "7",
           },
