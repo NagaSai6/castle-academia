@@ -9,6 +9,19 @@
     overflow: hidden !important;
     z-index: 99999 !important;
 }
+.rsc-float-button{
+    animation: tilt-shaking 0.25s infinite !important;
+    /* transform: translate3d(0, 0, 0) !important;
+    backface-visibility: hidden !important;
+    perspective: 1000px !important; */
+}
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
 @media screen and (max-width: 500px) {
     .rsc > .rsc-container{
         /* top: 100px !important; */
