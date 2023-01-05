@@ -76,12 +76,12 @@ class Review extends Component {
   }
 }
 
-SendMail.prototypes = {
-  steps: PropTypes.object,
-};
-SendMail.defaultProps = {
-  steps: undefined,
-};
+// SendMail.prototypes = {
+//   steps: PropTypes.object,
+// };
+// SendMail.defaultProps = {
+//   steps: undefined,
+// };
 
 Review.propTypes = {
   steps: PropTypes.object,
