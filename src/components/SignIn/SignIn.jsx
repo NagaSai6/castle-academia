@@ -35,7 +35,7 @@ export default function SignIn() {
       setLogin(true);
       // make  a post request
       const configuration = {
-        method: "put",
+        method: "post",
         url: "https://castle-academia-server.onrender.com/sign-in",
         data: {
           email : formData.email,
@@ -49,6 +49,7 @@ export default function SignIn() {
           });
           window.location.href = '/courses-overview';
       }).catch((e)=>{
+        console.log(e)
          alert("Sign in Failed - Incorrect password");
          setLogin(false);
       })
