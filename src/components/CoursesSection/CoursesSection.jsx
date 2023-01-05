@@ -9,7 +9,7 @@ export default function CoursesSection() {
     <div className="cs_container mx-auto">
       <h2>360° View on Courses We Offer</h2>
       <div class="horizontal_dotted_line"></div>
-      <p className="cs_desc">
+      <p className="cs_desc mb-3">
         Castle Academia is an EdTech start up with the team full of expertise
         who had worked closely with IIT Bombay, IIT Madras, IIT Kanpur, IIT
         Kharagpur, IIT Roorkee, BITS Pilani, NITs, JNTUH, GITAM (Vizag,
