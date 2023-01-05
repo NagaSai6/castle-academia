@@ -29,12 +29,13 @@ export default function FormSection() {
   function handlePhoneChange(e){
     setFormData({...formData,phone : e.target.value});
   }
-  function handleFormSubmit(){
+  function handleFormSubmit(e){
+    e.preventDefault();
     setIsFormSubmitted(false);
     setFormSubmit(true);
     const configuration = {
       method: "post",
-      url: "https://castle-academia-server.onrender.com/send-email-form-submission",
+      url: "https://castle-academia-server.onrender.com/send-mail-form-submission",
       data: formData
     };
 
@@ -47,6 +48,8 @@ export default function FormSection() {
         phone : '',
         message : ''
       });
+
+      console.log(result)
            
     }).catch((err)=>{
       setFormSubmit(false);
