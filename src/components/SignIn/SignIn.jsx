@@ -42,7 +42,7 @@ export default function SignIn() {
           });
           window.location.href = '/courses-overview';
       }).catch((e)=>{
-         alert("Sign in Failed Try Again");
+         alert("Sign in Failed - Incorrect password");
          setLogin(false);
       })
     } else {
@@ -54,7 +54,7 @@ export default function SignIn() {
     <div className="signin_form_container">
       <div className="signin_form_sub_container">
         <h3 style={{ textAlign: "center" }} className="mb-3">
-          Sign In
+          Register & Login
         </h3>
         <Form onSubmit={handleSignInFormSubmission}>
           <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
@@ -93,7 +93,7 @@ export default function SignIn() {
           </Form.Group>
           <button type="submit" className="fsc_submit_button mx-auto">
            {login &&  <Circles height={20} width={20} color="#000"/>}
-            Sign In
+            Submit
           </button>
         </Form>
       </div>

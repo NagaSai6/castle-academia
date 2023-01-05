@@ -61,7 +61,7 @@ export default function NavBar(props) {
               <Nav.Link href="/sign-in" className="my-auto mx-auto">
                 <button className="navbar_button">
                   <img src={siginLogo} />
-                  <span className="mx-2">Sign In</span>
+                  <span className="mx-2">Register</span>
                 </button>
               </Nav.Link>
             )}
