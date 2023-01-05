@@ -18,8 +18,8 @@ export default function CoursesSection() {
       </p>
 
       <Row>
-        <Col>
-          <Card style={{borderRadius : "15px"}} className="cs_card">
+        <Col md={4}>
+          <Card style={{borderRadius : "15px",width : ""}}  className="cs_card">
             <Card.Img className="cs_card_image" variant="top" src={startup_plan_logo} />
             <Card.Body className="cs_card_body">
               <Card.Text className="cs_card_text">CRT TRAINING</Card.Text>
@@ -30,7 +30,7 @@ export default function CoursesSection() {
           </div>
         </Col>
 
-        <Col>
+        <Col md={4}>
           <Card style={{borderRadius : "15px"}} className="cs_card">
             <Card.Img className="cs_card_image" variant="top" src={startup_plan_logo} />
             <Card.Body className="cs_card_body">
@@ -42,7 +42,7 @@ export default function CoursesSection() {
           </div>
         </Col>
 
-        <Col>
+        <Col md={4}>
           <Card style={{borderRadius : "15px"}} className="cs_card">
             <Card.Img className="cs_card_image" variant="top" src={abroad_studies_logo} />
             <Card.Body className="cs_card_body">

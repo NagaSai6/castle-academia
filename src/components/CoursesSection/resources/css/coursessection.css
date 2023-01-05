@@ -11,9 +11,12 @@
   background-size: 25% 2px;
   width: 25%;
 }
+.cs_card {
+  height: 245px !important;
+}
 .cs_card_image {
   background: #fdd03b;
-  min-height : 140px !important;
+  min-height: 140px !important;
 }
 .cs_desc {
   font-family: "Roboto";
@@ -41,20 +44,25 @@
   line-height: 24px;
 }
 
-.cs_card_body{
-  background-color: #2D2D2D;
- border-bottom-left-radius: 15px;
- border-bottom-right-radius: 15px;
+.cs_card_body {
+  background-color: #2d2d2d;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-items: center ;
+  justify-content: center;
+  display: flex;
+ 
 }
-.cs_card_text{
+.cs_card_text {
   color: #ffff;
+  font-size: small;
 }
 /* .cs_card{
   min-height: 297px !important;
 } */
 
 @media screen and (max-width: 500px) {
- .cs_container{
+  .cs_container {
     width: auto;
- }
   }
+}
