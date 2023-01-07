@@ -1,86 +1,25 @@
 import React from "react";
-import { Row, Col, Card, Button } from "react-bootstrap";
+import { Row, Col, Card } from "react-bootstrap";
+import CourseLayout from "../../common/CourseLayout";
 
-export default function CRTModuleSection() {
+export default function CRTModuleSection(props) {
+
+
+  let crt_components = props.crt_data.data.map((item)=>{
+    return (
+         <CourseLayout data={item} key={item._id}/>
+    )
+  })
   return (
     <div className="cs_container mx-auto" style={{ marginTop: "85px" }}>
-      <h2>360° View on CRT Module</h2>
+      <h2>{props.crt_data.category_header}</h2>
       <div class="horizontal_dotted_line"></div>
       <p className="cs_desc">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Ut wisi enim.Lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat. Ut wisi.
+        {props.crt_data.category_desc} 
       </p>
 
       <Row className="mt-4">
-        <Col>
-          <Card style={{ borderRadius: "15px" }} className="cs_card">
-            <Card.Img className="cs_card_image" variant="top" src={""} />
-            <Card.Body className="cs_card_body">
-              <Card.Text className="cs_card_text">CAREER COUNSELLING</Card.Text>
-            </Card.Body>
-          </Card>
-          <div className="cs_course_desc">
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim.
-            </p>
-          </div>
-        </Col>
-
-        <Col>
-          <Card style={{ borderRadius: "15px" }} className="cs_card">
-            <Card.Img className="cs_card_image" variant="top" src={""} />
-            <Card.Body className="cs_card_body">
-              <Card.Text className="cs_card_text">Mock Interview</Card.Text>
-            </Card.Body>
-          </Card>
-          <div className="cs_course_desc">
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim.
-            </p>
-          </div>
-        </Col>
-
-        <Col>
-          <Card style={{ borderRadius: "15px" }} className="cs_card">
-            <Card.Img className="cs_card_image" variant="top" src={""} />
-            <Card.Body className="cs_card_body">
-              <Card.Text className="cs_card_text">RESUME REVIEW</Card.Text>
-            </Card.Body>
-          </Card>
-          <div className="cs_course_desc">
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim.
-            </p>
-          </div>
-        </Col>
-        <Col>
-          <Card style={{ borderRadius: "15px" }} className="cs_card">
-            <Card.Img className="cs_card_image" variant="top" src={""} />
-            <Card.Body className="cs_card_body">
-              <Card.Text className="cs_card_text">ABROAD STUDIES</Card.Text>
-            </Card.Body>
-          </Card>
-          <div className="cs_course_desc">
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-              erat volutpat. Ut wisi enim.
-            </p>
-          </div>
-        </Col>
+        {crt_components}
       </Row>
     </div>
   );

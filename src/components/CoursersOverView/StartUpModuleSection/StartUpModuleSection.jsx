@@ -1,85 +1,23 @@
 import React from 'react'
 import { Row, Col, Card, Button } from "react-bootstrap";
-export default function StartUpModuleSection() {
+import CourseLayout from '../../common/CourseLayout';
+export default function StartUpModuleSection(props) {
+  let startup_content = props.startup_data.data.map((item)=>{
+    return (
+       <CourseLayout data={item} key={item._id} />
+    )
+  })
   return (
     <div className="cs_container mx-auto" style={{ marginTop: "10px" }}>
-    <h2>360° View on Startup Module</h2>
+    <h2>{props.startup_data.category_header}</h2>
     <div class="horizontal_dotted_line"></div>
     <p className="cs_desc">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-      nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-      volutpat. Ut wisi enim.Lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-      dolore magna aliquam erat volutpat. Ut wisi.
+      {props.startup_data.category_desc}
     </p>
 
     <Row className="mt-4">
-      <Col>
-        <Card style={{ borderRadius: "15px" }} className="cs_card">
-          <Card.Img className="cs_card_image" variant="top" src={""} />
-          <Card.Body className="cs_card_body">
-            <Card.Text className="cs_card_text">LEADERSHIP & MANAGEMENT COURSE</Card.Text>
-          </Card.Body>
-        </Card>
-        <div className="cs_course_desc">
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat. Ut wisi enim.
-          </p>
-        </div>
-      </Col>
+      {startup_content}
 
-      <Col>
-        <Card style={{ borderRadius: "15px" }} className="cs_card">
-          <Card.Img className="cs_card_image" variant="top" src={""} />
-          <Card.Body className="cs_card_body">
-            <Card.Text className="cs_card_text">HOW TO ENROLL COMPANY</Card.Text>
-          </Card.Body>
-        </Card>
-        <div className="cs_course_desc">
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat. Ut wisi enim.
-          </p>
-        </div>
-      </Col>
-
-      <Col>
-        <Card style={{ borderRadius: "15px" }} className="cs_card">
-          <Card.Img className="cs_card_image" variant="top" src={""} />
-          <Card.Body className="cs_card_body">
-            <Card.Text className="cs_card_text">1:1 SESSION WITH CEO</Card.Text>
-          </Card.Body>
-        </Card>
-        <div className="cs_course_desc">
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat. Ut wisi enim.
-          </p>
-        </div>
-      </Col>
-      <Col>
-        <Card style={{ borderRadius: "15px" }} className="cs_card">
-          <Card.Img className="cs_card_image" variant="top" src={""} />
-          <Card.Body className="cs_card_body">
-            <Card.Text className="cs_card_text">MOCK ON PITCHING</Card.Text>
-          </Card.Body>
-        </Card>
-        <div className="cs_course_desc">
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
-            erat volutpat. Ut wisi enim.
-          </p>
-        </div>
-      </Col>
     </Row>
   </div>
   )
