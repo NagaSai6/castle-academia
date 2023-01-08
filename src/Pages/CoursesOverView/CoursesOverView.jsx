@@ -3,6 +3,7 @@ import CRTModuleSection from "../../components/CoursersOverView/CRTModuleSection
 import AbroadModuleSection from "../../components/CoursersOverView/AbroadModuleSection/AbroadModuleSection";
 import StartUpModuleSection from "../../components/CoursersOverView/StartUpModuleSection/StartUpModuleSection";
 import axios from "axios";
+import { MutatingDots} from "react-loader-spinner";
 
 export default function CoursesOverView() {
   const [dataLoaded,setDataLoaded] = useState(false);
@@ -36,7 +37,7 @@ export default function CoursesOverView() {
     <CRTModuleSection crt_data={crt_coursesData}/>
     <StartUpModuleSection startup_data={startup_coursesData}/>
     <AbroadModuleSection abroad_data={abroad_coursesData}/>
-  </div> : ""}
+  </div> : <div style={{marginTop : '100px',display:'flex',justifyContent :'center',height : '90vh',width:'100%',alignContent : 'center'}}><MutatingDots secondaryColor= '#fdd03b' color="#fdd03b" /> </div>}
       </div>
   );
 }
