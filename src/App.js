@@ -11,29 +11,68 @@ import ProtectedRoutes from "./lib/ProtectedRoutes";
 import HomePage from "./Pages/HomePage/HomePage";
 import CoursesOverView from "./Pages/CoursesOverView/CoursesOverView";
 
-import { BrowserRouter as Router, Routes, Route,Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Cookies from "universal-cookie";
 import jwt_decode from "jwt-decode";
+import { useState } from "react";
+import axios from "axios";
 
 function App() {
+  const [isPremiumUser, setPremiumUser] = useState(false);
   const cookies = new Cookies();
   const token = cookies.get("auth-token");
-  let decode ;
-  if(token){
-   decode = jwt_decode(token);
+  let decode;
+
+  if (token) {
+    decode = jwt_decode(token);
+    console.log(decode)
+    if (decode && !isPremiumUser) {
+      // const configuration = {
+      //   method: "post",
+      //   // url: "https://castle-academia-server.onrender.com/sign-in",
+      //   url: "http://localhost:9000/sign-in",
+      //   data: {
+      //     email: decode.data.email,
+      //     password: decode.data.password,
+      //   },
+      // };
+      // axios(configuration)
+      //   .then((result) => {
+      //     cookies.set("auth-token", result.data.token, {
+      //       path: "/",
+      //     });
+      //   })
+      //   .catch((e) => {
+      //     console.log(e);
+      //   });
+      if (decode.data.role === "paid") {
+        setPremiumUser(true);
+      }
+    }
   }
   return (
     <Router>
-      <NavBar  userData={decode}/>
+      <NavBar userData={decode} />
 
       <Routes>
-        <Route path="/" exact element={<HomePage userData={decode}/>} />
-        {token && <Route path="/courses-overview" exact element={<CoursesOverView />} />}
+        <Route path="/" exact element={<HomePage userData={decode} />} />
+        {isPremiumUser && (
+          <Route path="/courses-overview" exact element={<CoursesOverView />} />
+        )}
         {!token && <Route path="/sign-in" exact element={<SignIn />} />}
-         <Route path="/sign-in" element={<Navigate replace to={'/'} />} />
+        <Route path="/sign-in" element={<Navigate replace to={"/"} />} />
 
         <Route path="*" element={<ErrorPage />} />
-        <Route path="/courses-overview" exact element={<Navigate replace to={'/sign-in'}/>} />
+        <Route
+          path="/courses-overview"
+          exact
+          element={<Navigate replace to={"/sign-in"} />}
+        />
       </Routes>
 
       <ChatBotForm />
