@@ -14,7 +14,11 @@
   border-radius: 20px;
   position: relative;
   text-align: center;
+  padding: 9px;
   
+}
+.hof_testimonial_desc{
+  font-size: 14px;
 }
 .hof_traingle {
   position: absolute;

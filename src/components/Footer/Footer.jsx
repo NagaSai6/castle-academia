@@ -29,22 +29,22 @@ export default function Footer() {
             Copyright @ {year} Castle Academia.
           </p>
           <p>All rights reserved.</p>
-          <div className="fc_team_social_media">
-            <a className="fc_social_media_button" href="">
+          <div className="fc_team_social_media my-2">
+            <a className="fc_social_media_button" href="https://www.facebook.com/profile.php?id=100089498376775">
               <img className="bs_social_media_icon" src={facebookLogo} />
             </a>
-            <a className="fc_social_media_button" href="">
+            <a className="fc_social_media_button" href="https://www.linkedin.com/in/castle-academia-093877261">
               <img className="bs_social_media_icon" src={linkedInLogo} />
             </a>
-            <a className="fc_social_media_button" href="">
+            {/* <a className="fc_social_media_button" href="">
               <img className="bs_social_media_icon" src={twitterLogo} />
-            </a>
-            <a className="fc_social_media_button" href="">
+            </a> */}
+            <a className="fc_social_media_button" href="https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=">
               <img className="bs_social_media_icon" src={instagramLogo} />
             </a>
-            <a className="fc_social_media_button" href="">
+            {/* <a className="fc_social_media_button" href="">
               <img className="bs_social_media_icon" src={discordLogo} />
-            </a>
+            </a> */}
           </div>
         </Col>
 

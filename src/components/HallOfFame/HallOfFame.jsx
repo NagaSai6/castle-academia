@@ -16,7 +16,7 @@ export default function HallOfFame() {
       <div className="hof_parent_container" >
         <div className="hof_testimonial_container  mx-auto">
           <img className="mt-4" src={invertedCommas} alt="" srcset="" />
-          <p className="mt-4">{item.testimonial}</p>
+          <p className="mt-4 hof_testimonial_desc">{item.testimonial}</p>
           <div className="hof_traingle"></div>
         </div>
 

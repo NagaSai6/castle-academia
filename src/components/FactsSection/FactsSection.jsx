@@ -7,11 +7,11 @@ export default function FactsSection() {
     <div className="fs_container">
       <h1>Our Standout Progress</h1>
       <div style={{ width: "12%" }} class="horizontal_dotted_line"></div>
-      <p className="fs_desc">
+      {/* <p className="fs_desc">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
         volutpat.
-      </p>
+      </p> */}
 
       <div className="fs_cards_container">
         <Row>
@@ -19,9 +19,9 @@ export default function FactsSection() {
             <div className="fs_cards">
               <h6 className="fs_header_name">Students</h6>
 
-              <h2 className="fs_header_metric">12k+</h2>
+              <h2 className="fs_header_metric">2.5K+</h2>
 
-              <p className="fs_cards_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+              <p className="fs_cards_desc">Number of students successfully enrolled</p>
             </div>
           </Col>
           <Col>
@@ -30,19 +30,19 @@ export default function FactsSection() {
 
               <h2 className="fs_header_metric">10+</h2>
 
-              <p className="fs_cards_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+              <p className="fs_cards_desc">We provide a wide range of more than 10+ courses that cater to the interests of each individual student in the class.</p>
             </div>
           </Col>
           <Col>
             <div className="fs_cards">
               <h6 className="fs_header_name">Instructors</h6>
 
-              <h2 className="fs_header_metric">15+</h2>
+              <h2 className="fs_header_metric">200+</h2>
 
-              <p className="fs_cards_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+              <p className="fs_cards_desc">We have top-tier professionals experts who hold no less than 15+ years of experience in the respective field.</p>
             </div>
           </Col>
-          <Col>
+          {/* <Col>
             <div className="fs_cards">
               <h6 className="fs_header_name">Success</h6>
 
@@ -50,7 +50,7 @@ export default function FactsSection() {
 
               <p className="fs_cards_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </div>
     </div>

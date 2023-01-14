@@ -11,9 +11,9 @@ export default function StartUpModuleSection(props) {
     <div className="cs_container mx-auto" style={{ marginTop: "10px" }}>
     <h2>{props.startup_data.category_header}</h2>
     <div class="horizontal_dotted_line"></div>
-    <p className="cs_desc">
+    {/* <p className="cs_desc">
       {props.startup_data.category_desc}
-    </p>
+    </p> */}
 
     <Row className="mt-4">
       {startup_content}

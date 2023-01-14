@@ -9,12 +9,10 @@ export default function BannerSectionContainer() {
       <Row className="bs_parent-container g-0 align-items-center">
         <Col xs="12" lg ="6" cclassName="bs_text-container">
           <h5 className="bs_text_desc1">With Better Opportunity</h5>
-          <h1 className="bs_text_desc2">2.5K+ STUDENTS</h1>
-          <h1 className="bs_text_desc2">START WITH US</h1>
+          <h1 className="bs_text_desc2">IF IT SCARES YOU,</h1>
+          <h1 className="bs_text_desc2">IT MIGHT BE A GOOD THING TO TRY</h1>
           <h5 className="bs_text_desc1">
-            The Castle Academia is an EdTech start up with the team full of
-            expertise, who had worked closely with so many well-known
-            educational organizations.
+          The Castle Academia  is an EdTech start up with the team full of expertise who had worked closely with IIT Bombay, IIT Madras,IIT Kanpur, IIT Kharagpur  IIT Roorkee, BITS Pilani, NITs & 20+ colleges national wide.
           </h5>
           <button href="http://" className="bs_text-button">
             Get Started

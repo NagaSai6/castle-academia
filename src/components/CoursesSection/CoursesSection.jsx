@@ -10,11 +10,7 @@ export default function CoursesSection() {
       <h2>360° View on Courses We Offer</h2>
       <div class="horizontal_dotted_line"></div>
       <p className="cs_desc mb-3">
-        Castle Academia is an EdTech start up with the team full of expertise
-        who had worked closely with IIT Bombay, IIT Madras, IIT Kanpur, IIT
-        Kharagpur, IIT Roorkee, BITS Pilani, NITs, JNTUH, GITAM (Vizag,
-        Hyderabad), Mahindra University, G. Narayanamma Institute of Technology,
-        GCET Colleges.
+      The most crucial component of career transition is determining which professional route is meant for you and receiving expert's advice on that track
       </p>
 
       <Row>
@@ -26,7 +22,7 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           <div className="cs_course_desc">
-            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
+            <p>Learn core industry skills from top edtech instructors.We assist in hunting new job opportunities and our expertise helps you land on dream job through mentoring in networking, interviewing, and placement techniques.</p>
           </div>
         </Col>
 
@@ -38,7 +34,7 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           <div className="cs_course_desc">
-            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
+            <p> We personally  assist & modify plan according to your ideation followed by building startup from scratch to seed funding which includes leadership management ,pitch and product readiness, 1:1 session with CEO's.</p>
           </div>
         </Col>
 
@@ -50,7 +46,9 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           <div className="cs_course_desc">
-            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.</p>
+            <p> Discover and interact with Alumni of your dream college who once travelled the same route as you.
+We provide A-Z overseas services, from assisting you in selecting the best university to enrolling in it
+</p>
           </div>
         </Col>
 

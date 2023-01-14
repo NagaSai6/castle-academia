@@ -18,16 +18,13 @@ export default function BannerCarousel(props) {
             <h4 className="bs_team_title">{item.name}</h4>
             <h4 className="bs_team_designation">{item.designation}</h4>
             <div className="bs_team_social_media">
-              <a className="bs_social_media_button-first-child" href="">
+              <a className="bs_social_media_button-first-child" href="https://www.facebook.com/profile.php?id=100089498376775">
                 <img className="bs_social_media_icon" src={facebookLogo} />
               </a>
-              <a className="bs_social_media_button" href="">
+              <a className="bs_social_media_button" href="https://www.linkedin.com/in/castle-academia-093877261">
                 <img className="bs_social_media_icon" src={linkedInLogo} />
               </a>
-              <a className="bs_social_media_button" href="">
-                <img className="bs_social_media_icon" src={twitterLogo} />
-              </a>
-              <a className="bs_social_media_button" href="">
+              <a className="bs_social_media_button" href="https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=">
                 <img className="bs_social_media_icon" src={instagramLogo} />
               </a>
             </div>
@@ -45,19 +42,8 @@ export default function BannerCarousel(props) {
                     <p className="bs_about_section_edu"> {item.achievements}</p>
                   </div>
                 </div>
-                <div className="bs_about_section-sub">
-                  <img
-                    className="bs_about_section-logo"
-                    src={educationLogo}
-                    alt=""
-                    srcset=""
-                  />
-                  <div className="bs_about_section_mobile">
-                    <p className="bs_about_section_achieve">Education  :</p>
-                    <p className="bs_about_section_edu"> {item.education}</p>
-                  </div>
-                </div>
-                <div className="bs_about_section-sub">
+
+                {/* <div className="bs_about_section-sub">
                   <img
                     className="bs_about_section-logo"
                     src={experienceLogo}
@@ -68,10 +54,10 @@ export default function BannerCarousel(props) {
                     <p className="bs_about_section_achieve">Experience :</p>
                     <p className="bs_about_section_edu">{item.experience}</p>
                   </div>
-                </div>
+                </div> */}
               </div>
 
-              <div className="bs_desc_section">
+              <div className="bs_desc_section mt-3">
                 <h6>{item.descHeader}</h6>
                 <p className="bs_about_carousel_desc">{item.desc}</p>
               </div>
