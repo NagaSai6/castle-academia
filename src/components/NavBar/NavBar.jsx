@@ -58,11 +58,14 @@ export default function NavBar(props) {
           </Nav>
           <Nav className="ml-auto">
             {!token && (
-              <Nav.Link href="/sign-in" className="my-auto mx-auto">
-                <button className="navbar_button">
+              <Nav.Link href="#" className="my-auto mx-auto">
+                {/* <button className="navbar_button">
                   <img src={siginLogo} />
                   <span className="mx-2">Register</span>
-                </button>
+                </button> */}
+                <div id="googleSignInButton">
+
+                </div>
               </Nav.Link>
             )}
             {token && (

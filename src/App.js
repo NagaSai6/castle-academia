@@ -19,10 +19,35 @@ import {
 } from "react-router-dom";
 import Cookies from "universal-cookie";
 import jwt_decode from "jwt-decode";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+var google ;
 
 
 function App() {
+
+  function handleCallbackResponse(resp){
+    console.log(resp.credential)
+  }
+  
+  useEffect(()=>{
+   
+
+    
+    window.google.accounts.id.initialize({
+      client_id : "928028449034-u237u6o9dc52fnbl562vmitb1ce9i78g.apps.googleusercontent.com",
+      callback : handleCallbackResponse
+
+    });
+    
+    window.google.accounts.id.renderButton(
+      document.getElementById("googleSignInButton"),
+      {theme : "outline",size:"medium"}
+    )
+
+  },[])
+
+
+
   const [isPremiumUser, setPremiumUser] = useState(false);
   const cookies = new Cookies();
   const token = cookies.get("auth-token");
@@ -56,6 +81,8 @@ function App() {
     }
   }
   return (
+    <>
+
     <Router>
       <NavBar userData={decode} />
 
@@ -77,6 +104,7 @@ function App() {
 
       <ChatBotForm />
     </Router>
+    </>
   );
 }
 
