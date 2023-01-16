@@ -17,6 +17,13 @@
   padding: 9px;
   
 }
+.hof_testimonial_container:hover{
+ background: #000;
+ color: #fff;
+}
+.hof_testimonial_container:hover .hof_traingle{
+border-top: 50px solid #000;
+}
 .hof_testimonial_desc{
   font-size: 14px;
 }

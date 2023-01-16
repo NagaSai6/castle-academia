@@ -30,7 +30,7 @@ export default function BannerCarousel(props) {
             </div>
             <Card.Body>
               <div className="bs_about_section">
-                <div className="bs_about_section-sub">
+                {/* <div className="bs_about_section-sub">
                   <img
                     className="bs_about_section-logo"
                     src={achievementLogo}
@@ -41,7 +41,7 @@ export default function BannerCarousel(props) {
                     <p className="bs_about_section_achieve">Achievements :</p>
                     <p className="bs_about_section_edu"> {item.achievements}</p>
                   </div>
-                </div>
+                </div> */}
 
                 {/* <div className="bs_about_section-sub">
                   <img
