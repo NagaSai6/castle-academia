@@ -5,6 +5,7 @@ import linkedInLogo from "../BannerSection/resources/images/linkedin.png";
 import twitterLogo from "../BannerSection/resources/images/twitter.png";
 import instagramLogo from "../BannerSection/resources/images/instagram.png";
 import discordLogo from "./resources/images/discord.png";
+import whatsappLogo from "../BannerSection/resources/images/whatsapp.png";
 import fingerIcon from "./resources/images/finger.svg";
 import contactLogo from "./resources/images/contact.svg";
 import emailLogo from "./resources/images/email.svg";
@@ -42,6 +43,9 @@ export default function Footer() {
             <a className="fc_social_media_button" href="https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=">
               <img className="bs_social_media_icon" src={instagramLogo} />
             </a>
+            <a target="_blank"  className="fc_social_media_button" href="https://chat.whatsapp.com/IpW1IfXOmv4EVIHM61wITY">
+                <img className="bs_social_media_icon" src={whatsappLogo} />
+              </a>
             {/* <a className="fc_social_media_button" href="">
               <img className="bs_social_media_icon" src={discordLogo} />
             </a> */}

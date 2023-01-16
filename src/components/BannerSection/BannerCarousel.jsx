@@ -4,6 +4,7 @@ import facebookLogo from "./resources/images/facebook.png";
 import linkedInLogo from "./resources/images/linkedin.png";
 import twitterLogo from "./resources/images/twitter.png";
 import instagramLogo from "./resources/images/instagram.png";
+import whatsappLogo from "./resources/images/whatsapp.png";
 import achievementLogo from "./resources/images/badge.png";
 import educationLogo from "./resources/images/mortarboard.png";
 import experienceLogo from "./resources/images/portfolio.png";
@@ -26,6 +27,9 @@ export default function BannerCarousel(props) {
               </a>
               <a className="bs_social_media_button" href="https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=">
                 <img className="bs_social_media_icon" src={instagramLogo} />
+              </a>
+              <a target="_blank"  className="bs_social_media_button" href="https://chat.whatsapp.com/IpW1IfXOmv4EVIHM61wITY">
+                <img className="bs_social_media_icon" src={whatsappLogo} />
               </a>
             </div>
             <Card.Body>
