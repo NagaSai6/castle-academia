@@ -20,13 +20,13 @@ import {
 import Cookies from "universal-cookie";
 import jwt_decode from "jwt-decode";
 import { useState,useEffect } from "react";
-var google ;
+
 
 
 function App() {
 
   function handleCallbackResponse(resp){
-    console.log(resp.credential)
+    console.log(jwt_decode(resp.credential))
   }
   
   useEffect(()=>{
@@ -42,7 +42,9 @@ function App() {
     window.google.accounts.id.renderButton(
       document.getElementById("googleSignInButton"),
       {theme : "outline",size:"medium"}
-    )
+    );
+
+    window.google.accounts.id.prompt();
 
   },[])
 
