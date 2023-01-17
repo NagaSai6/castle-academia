@@ -10,102 +10,81 @@ import ProtectedRoutes from "./lib/ProtectedRoutes";
 // pages
 import HomePage from "./Pages/HomePage/HomePage";
 import CoursesOverView from "./Pages/CoursesOverView/CoursesOverView";
-
+import axios from "axios";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
-import Cookies from "universal-cookie";
+
 import jwt_decode from "jwt-decode";
-import { useState,useEffect } from "react";
-
-
+import { useState, useEffect } from "react";
+import { useCookies } from "react-cookie";
 
 function App() {
+  // state
 
-  function handleCallbackResponse(resp){
-    console.log(jwt_decode(resp.credential))
-  }
-  
-  useEffect(()=>{
-   
-
-    
-    window.google.accounts.id.initialize({
-      client_id : "928028449034-u237u6o9dc52fnbl562vmitb1ce9i78g.apps.googleusercontent.com",
-      callback : handleCallbackResponse
-
-    });
-    
-    window.google.accounts.id.renderButton(
-      document.getElementById("googleSignInButton"),
-      {theme : "outline",size:"medium"}
-    );
-
-    window.google.accounts.id.prompt();
-
-  },[])
-
-
-
-  const [isPremiumUser, setPremiumUser] = useState(false);
-  const cookies = new Cookies();
-  const token = cookies.get("auth-token");
+  let [cookies] = useCookies(["auth-token"]);
+  let [userData, setUserData] = useState({ isExist: false, data: {} });
+  let [isPremiumUser, setPremiumUser] = useState(false);
   let decode;
-
-  if (token) {
-    decode = jwt_decode(token);
-    console.log(decode)
-    if (decode && !isPremiumUser) {
-      // const configuration = {
-      //   method: "post",
-      //   // url: "https://castle-academia-server.onrender.com/sign-in",
-      //   url: "http://localhost:9000/sign-in",
-      //   data: {
-      //     email: decode.data.email,
-      //     password: decode.data.password,
-      //   },
-      // };
-      // axios(configuration)
-      //   .then((result) => {
-      //     cookies.set("auth-token", result.data.token, {
-      //       path: "/",
-      //     });
-      //   })
-      //   .catch((e) => {
-      //     console.log(e);
-      //   });
-      if (decode.data.role === "paid") {
+  if (cookies["auth-token"] && !userData.isExist) {
+    let decoded_data = jwt_decode(cookies["auth-token"]);
+    console.log(decoded_data);
+    if (decoded_data) {
+      setUserData({ isExist: true, data: decoded_data });
+      if (decoded_data.user.role === "paid") {
         setPremiumUser(true);
       }
+      const configuration = {
+        method: "get",
+        // url: "https://castle-academia-server.onrender.com/google-sign-in",
+        url: `http://localhost:9000/check-user-role?id=${decoded_data.user._id}`,
+        headers: {
+          Authorization: `Bearer ${cookies["auth-token"]}`,
+        },
+      };
+      axios(configuration)
+        .then((res) => {
+          let role = res.data.data;
+          console.log(role);
+       
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   }
+
+  console.log(userData);
+  console.log(isPremiumUser);
+
   return (
     <>
+      <Router>
+        <NavBar userData={userData} />
 
-    <Router>
-      <NavBar userData={decode} />
+        <Routes>
+          <Route path="/" exact element={<HomePage />} />
+          <Route
+              path="/courses-overview"
+              exact
+              element={
+                <ProtectedRoutes isPremiumUser={isPremiumUser}>
+                  <CoursesOverView />
+                </ProtectedRoutes>
+              }
+            />
 
-      <Routes>
-        <Route path="/" exact element={<HomePage userData={decode} />} />
-        {isPremiumUser && (
-          <Route path="/courses-overview" exact element={<CoursesOverView />} />
-        )}
-        {!token && <Route path="/sign-in" exact element={<SignIn />} />}
-        <Route path="/sign-in" element={<Navigate replace to={"/"} />} />
+          {/* {!cookies["auth-token"] && <Route path="/sign-in" exact element={<SignIn />} />} */}
+          {/* <Route path="/sign-in" element={<Navigate replace to={"/"} />} /> */}
 
-        <Route path="*" element={<ErrorPage />} />
-        <Route
-          path="/courses-overview"
-          exact
-          element={<Navigate replace to={"/sign-in"} />}
-        />
-      </Routes>
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
 
-      <ChatBotForm />
-    </Router>
+        <ChatBotForm />
+      </Router>
     </>
   );
 }

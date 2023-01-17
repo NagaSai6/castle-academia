@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -10,28 +10,81 @@ import Cookies from "universal-cookie";
 import { BsSearch } from "react-icons/bs";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
+import {useCookies} from "react-cookie";
+import axios from "axios";
 
 import "./navbar.css";
 
 export default function NavBar(props) {
-  const cookies = new Cookies();
-  const token = cookies.get("auth-token");
+  const cookiesz = new Cookies();
+  const token = cookiesz.get("auth-token");
 
 
-  if (token) {
-    var email = props.userData.data.email;
-    var name = email.split("@")[0];
-  }
+ 
 
-  function triggerLogOut(){
-    cookies.remove('auth-token',[{path : '/'}]);
-    window.location.href = '/';
-  }
+ 
 
   const THREE_DAYS_IN_MS = 3 * 24 * 60 * 60 * 1000;
   const NOW_IN_MS = new Date().getTime();
 
   const dateTimeAfterThreeDays = NOW_IN_MS + THREE_DAYS_IN_MS;
+
+
+  const [cookies,setCookie,removeCookie] = useCookies(['auth-token']);
+
+  function triggerLogOut(){
+    removeCookie('auth-token',[{path : '/'}])
+    window.location.href = '/';
+  }
+
+
+
+
+  function handleCallbackResponse(resp) {
+    let token = resp.credential;
+    const configuration = {
+      method: "post",
+      // url: "https://castle-academia-server.onrender.com/google-sign-in",
+      url : "http://localhost:9000/google-sign-in",
+      data: {token},
+    };
+
+    axios(configuration)
+      .then((res) => {
+        let data = res.data.data ;
+        console.log(data)
+        setCookie('auth-token',data,{path : '/',maxAge : 5000});
+        window.location.href = '/courses-overview'
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      window.google.accounts.id.initialize({
+        client_id:
+          "928028449034-u237u6o9dc52fnbl562vmitb1ce9i78g.apps.googleusercontent.com",
+        callback: handleCallbackResponse,
+      });
+
+      window.google.accounts.id.renderButton(
+        document.getElementById("googleSignInButton"),
+        { theme: "outline", size: "medium" }
+      );
+
+      if(!cookies["auth-token"]){
+        window.google.accounts.id.prompt();
+      }
+    }, 1000);
+  }, []);
+
+
+
+
+
+
   return (
     <Navbar bg="dark" expand="md" className="navbar_container" fixed="top">
       <Container>
@@ -57,7 +110,7 @@ export default function NavBar(props) {
             </Container>
           </Nav>
           <Nav className="ml-auto">
-            {!token && (
+            {!cookies["auth-token"] && (
               <Nav.Link href="#" className="my-auto mx-auto">
                 {/* <button className="navbar_button">
                   <img src={siginLogo} />
@@ -68,7 +121,7 @@ export default function NavBar(props) {
                 </div>
               </Nav.Link>
             )}
-            {token && (
+            {cookies["auth-token"] && (
               <DropdownButton
                 id="dropdown-item-button"
                 className="my-auto"
@@ -78,12 +131,13 @@ export default function NavBar(props) {
                       <img
                         className="thumbnail-image mx-2"
                         src={
-                          "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+                          `${props.userData.data.user.google.details.picture}`
                         }
                         alt="user pic"
+                        referrerPolicy="no-referrer"
                       />
                     </span>
-                    {name}
+                    {}
                   </span>
                 }
               >
@@ -94,15 +148,16 @@ export default function NavBar(props) {
                         <img
                           className="thumbnail-image mx-2"
                           src={
-                            "https://randomuser.me/api/portraits/thumb/men/75.jpg"
+                            `${props.userData.data.user.google.details.picture}`
                           }
+                          referrerPolicy="no-referrer"
                           alt="user pic"
                         />
                       </span>
                     </div>
                     <div className="my-auto d-flex flex-column">
-                      <p>{name}</p>
-                      <p>Developer</p>
+                      <p>{props.userData.data.user.google.name}</p>
+                      
                     </div>
                   </div>
                 </Dropdown.ItemText>

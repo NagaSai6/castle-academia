@@ -54,6 +54,7 @@
 .thumbnail-image{
   border-radius: 50%;
   border: 10px  #FDD03B !important;
+  height: 48px;
 }
 #dropdown-item-button{
   background-color: #212529 !important;
