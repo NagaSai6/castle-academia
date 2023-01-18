@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import siginLogo from "./signin.svg";
+import saleLogo from "./resources/images/saleIcon.svg";
 import CountdownTimer from "./CountDownTimer";
 import Cookies from "universal-cookie";
 import { BsSearch } from "react-icons/bs";
@@ -12,8 +12,10 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import {useCookies} from "react-cookie";
 import axios from "axios";
+import {Row} from "react-bootstrap";
 
 import "./navbar.css";
+import { Col } from "react-bootstrap";
 
 export default function NavBar(props) {
   const cookiesz = new Cookies();
@@ -86,7 +88,7 @@ export default function NavBar(props) {
 
   return (
     <Navbar bg="dark" expand="md" className="navbar_container" fixed="top">
-      <Container>
+     
         <Navbar.Brand href="/">
           <div className="navbar_navbrand">
             <h1 className="navbar_header">
@@ -100,7 +102,7 @@ export default function NavBar(props) {
           id="basic-navbar-nav"
           className="justify-content-center"
         >
-          <Nav className="mx-auto ">
+          <Nav className="mx-auto">
             <Container className="navbar_countdown_container">
               <p style={{ color: "#fff" }} className="navbar_countdown_text">
                 Only last 10 seats are left. Hurry up!! The Sale will end soon.
@@ -108,8 +110,14 @@ export default function NavBar(props) {
               </p>
             </Container>
           </Nav>
+          <Nav className="mr-auto" >
+          <div className="saleLogoContainer" >
+           <img src={saleLogo} alt="" srcset="" className="saleLogo" />
+           </div>
+          </Nav>
           <Nav className="ml-auto">
-            {!cookies["auth-token"] && (
+
+           {!cookies["auth-token"] && (
               <Nav.Link href="#" className="my-auto mx-auto">
                 {/* <button className="navbar_button">
                   <img src={siginLogo} />
@@ -192,9 +200,12 @@ export default function NavBar(props) {
                 <Dropdown.Item as="button" onClick={triggerLogOut}>Log out</Dropdown.Item>
               </DropdownButton>
             )}
+           
+  
+
           </Nav>
         </Navbar.Collapse>
-      </Container>
+
     </Navbar>
   );
 }

@@ -1,6 +1,11 @@
 .navbar_container {
   /* background: #000000 !important;
   opacity: 0.9 !important; */
+  /* margin : 0 !important; */
+padding: 10px 90px !important;
+}
+.navbar_countdown_text{
+  font-size: 17px;
 }
 .navbar-toggler{
   border: 2px solid #fdd03b !important;
@@ -60,8 +65,9 @@
 }
 #dropdown-item-button{
   background-color: #212529 !important;
-  width:260px !important;
+  width:auto !important;
   border: 0 !important;
+  margin-right: 75px !important;
 }
 .dropdown-item:hover{
  background-color: #FDD03B;
@@ -105,6 +111,11 @@
 
   text-align: center;
 }
+.saleLogoContainer{
+  position: absolute;
+  top : 15%;
+  right : 20%
+}
 
 @media screen and (max-width: 500px) {
   .navbar_counter_value {
@@ -114,12 +125,40 @@
     font-size: x-small !important;
   }
   .navbar_counter_desc {
-    font-size: small !important;
+    font-size: 16px !important;
   }
   .show-counter .countdown-link {
     margin-top: 5px;
   }
   #dropdown-item-button{
     width: auto !important;
+  }
+  .navbar_container{
+    padding: 10px !important;
+  }
+  .saleLogoContainer{
+    display: none;
+  }
+}
+@media screen and (min-width : 1000px) and (max-width : 1500px){
+  .saleLogoContainer{
+   top : 25%;
+   right : 20%;
+  }
+  #dropdown-item-button{
+    margin-right: 68px !important;
+  }
+  .navbar_container{
+    padding: 5px 0px;
+  }
+  .saleLogo{
+    width: 130px;
+  }
+  
+
+}
+@media screen and (max-width : 999px) {
+  .saleLogoContainer{
+    display: none;
   }
 }
