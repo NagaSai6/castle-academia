@@ -3,6 +3,7 @@ import "./resources/css/coursessection.css";
 import { Row, Col, Card, Button } from "react-bootstrap";
 import startup_plan_logo from "./resources/images/businessmanpana1.svg";
 import abroad_studies_logo from "./resources/images/studyabroadpana1.svg";
+import crt_logo from './resources/images/crt.svg';
 
 export default function CoursesSection() {
   return (
@@ -16,7 +17,7 @@ export default function CoursesSection() {
       <Row>
         <Col md={4}>
           <Card style={{borderRadius : "15px",width : ""}}  className="cs_card">
-            <Card.Img className="cs_card_image" variant="top" src={startup_plan_logo} />
+            <Card.Img className="cs_card_image" variant="top" src={crt_logo} />
             <Card.Body className="cs_card_body">
               <Card.Text className="cs_card_text">CRT TRAINING</Card.Text>
             </Card.Body>

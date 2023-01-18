@@ -2,12 +2,14 @@ import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import CourseLayout from "../../common/CourseLayout";
 
+
+
 export default function CRTModuleSection(props) {
 
 
   let crt_components = props.crt_data.data.map((item)=>{
     return (
-         <CourseLayout data={item} key={item._id}/>
+         <CourseLayout data={item} key={item._id} type="CRTModuleSection" />
     )
   })
   return (

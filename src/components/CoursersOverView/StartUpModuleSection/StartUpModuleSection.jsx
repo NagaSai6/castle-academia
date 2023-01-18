@@ -4,7 +4,7 @@ import CourseLayout from '../../common/CourseLayout';
 export default function StartUpModuleSection(props) {
   let startup_content = props.startup_data.data.map((item)=>{
     return (
-       <CourseLayout data={item} key={item._id} />
+       <CourseLayout data={item} key={item._id} type="StartUpModuleSection" />
     )
   })
   return (
