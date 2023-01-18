@@ -9,6 +9,9 @@
     overflow: hidden !important;
     z-index: 99999 !important;
 }
+.rsc-header{
+    background-color: rgb(253, 208, 59) !important;
+}
 .rsc-float-button{
     animation: tilt-n-move-shaking 0.6s infinite !important;
     /* transform: translate3d(0, 0, 0) !important;
