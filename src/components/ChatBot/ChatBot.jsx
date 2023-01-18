@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component,useEffect } from "react";
 import PropTypes from "prop-types";
 import ChatBot from "react-simple-chatbot";
 import axios from "axios";
@@ -92,10 +92,12 @@ Review.defaultProps = {
 };
 
 class ChatBotForm extends Component {
+ 
   render() {
     return (
       <ChatBot
-        width="300px"
+        width="330px"
+        enableMobileAutoFocus={true}
         bubbleStyle={{ backgroundColor: "#FDD03B" }}
         floatingStyle={{ backgroundColor: "#000" }}
         headerTitle="Castle Academia"

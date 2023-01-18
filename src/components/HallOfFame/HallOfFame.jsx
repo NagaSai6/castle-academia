@@ -16,12 +16,12 @@ export default function HallOfFame() {
       <div className="hof_parent_container" >
         <div className="hof_testimonial_container  mx-auto">
           <img className="mt-4" src={invertedCommas} alt="" srcset="" />
-          <p className="mt-4 hof_testimonial_desc">{item.testimonial}</p>
+          <p className="mt-4 hof_testimonial_desc  mb-3">{item.testimonial}</p>
           <div className="hof_traingle"></div>
         </div>
 
-        <div className="mt-4 ">
-          <img className="hof_image_container mt-3" src={item.imageUrl} alt="" srcset="" />
+        <div className="" style={{marginTop : "40px"}}>
+          {/* <img className="hof_image_container mt-3" style={{visibility : "hidden"}} src={item.imageUrl} alt="" srcset="" /> */}
            <p><b>{item.name}</b></p>
            {/* <p>{item.designation}</p> */}
         </div>

@@ -24,7 +24,7 @@ import { useCookies } from "react-cookie";
 
 function App() {
   // state
-
+ 
   let [cookies] = useCookies(["auth-token"]);
   let [userData, setUserData] = useState({ isExist: false, data: {} });
   let [isPremiumUser, setPremiumUser] = useState(false);
@@ -57,8 +57,13 @@ function App() {
     }
   }
 
-  console.log(userData);
-  console.log(isPremiumUser);
+  useEffect(()=>{
+    let audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
+    let chatBotButton = document.getElementsByClassName("rsc-float-button");
+    chatBotButton[0].addEventListener("click",()=>{
+      audio.play();
+    })
+  },[])
 
   return (
     <>

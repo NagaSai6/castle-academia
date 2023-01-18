@@ -24,7 +24,7 @@ export default function Footer() {
           <h1 className="fc_part1_h1">
             CASTLE <span className="fc_part1_header">ACADEMIA</span>
           </h1>
-          <p className="fc_part1_desc">A home for your dream career</p>
+          <p className="fc_part1_desc mb-2">A home for your dream career</p>
 
           <p style={{ display: "inline-flex" }}>
             Copyright @ {year} Castle Academia.

@@ -8,7 +8,8 @@
     width: 100%;
 
      background-image: url('../../../BannerSection/resources/images/rectangle-24@2x.png');
-     background-repeat: no-repeat;
+     /* background-repeat: no-repeat; */
+     background-position: center;
      position: relative;
      box-sizing: border-box;
 }
@@ -23,13 +24,18 @@
 }
 .fc_part1_h1{
     margin: 0;
+ font-family: "Rounded Mplus 1c Bold";
+ font-size: 1.8rem;
 }
 .fc_part1_header{
     color: #fff;
+
 }
 
 .fc_part1_desc{
     color: #fff;
+    text-align: justify;
+    letter-spacing: 2px;
 
 }
 .fc_social_media_button{

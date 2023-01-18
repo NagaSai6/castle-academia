@@ -52,7 +52,6 @@ export default function NavBar(props) {
     axios(configuration)
       .then((res) => {
         let data = res.data.data ;
-        console.log(data)
         setCookie('auth-token',data,{path : '/',maxAge : 5000});
         window.location.href = '/courses-overview'
       })
