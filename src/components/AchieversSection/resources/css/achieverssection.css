@@ -11,6 +11,9 @@
 .as_logo_parent_container{
     display: flex;
 }
+.as_logo{
+  width: 112px;
+}
 
 @media screen and (max-width: 500px) {
     .as_logo_container{
