@@ -14,8 +14,8 @@ padding: 10px 90px !important;
 .navbar_header {
   color: #fff;
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 2.2rem;
   font-family: "Rounded Mplus 1c Bold";
   margin-bottom: 0;
 }
@@ -23,10 +23,11 @@ padding: 10px 90px !important;
   color: #ffff;
   font-family: "Rounded Mplus 1c Bold";
   font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
+  font-weight: 500;
+  font-size: 17px;
   line-height: 20px;
-  letter-spacing: 3.5px;
+  letter-spacing: 1.5px;
+  margin-bottom: 0;
 }
 
 .navbar_button {
@@ -35,6 +36,7 @@ padding: 10px 90px !important;
   background: #fdd03b;
   border-radius: 30px;
   border: 0 !important;
+  margin: 0;
 }
 .show-counter .countdown-link {
   display: flex;

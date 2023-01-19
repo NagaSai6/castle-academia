@@ -117,22 +117,24 @@
 
 .bs_team_title {
   position: absolute;
-  top: 136px;
+  top: 133px;
   z-index: 4;
-  left: 30px;
-  color: #fff;
+  left: 17px;
+  color: #000;
+  font-size: 1.25rem;
 }
 .bs_team_designation {
   position: absolute;
   top: 173px;
   z-index: 4;
-  left: 30px;
-  color: #fff;
+  left: 17px;
+  color: #000;
+  font-size: 1.3rem;
 }
 .bs_team_social_media {
   display: flex;
   position: absolute;
-  top: 255px;
+  top: 235px;
   left: 30px;
 }
 .bs_social_media_icon {
@@ -197,6 +199,9 @@
     top: 80px;
     left: 20px;
   }
+  .bs_team_mate_img{
+    max-height: 259px !important;
+  }
 
   .bs_team_designation {
     top: 105px;
@@ -233,6 +238,9 @@
     width: 150px !important;
     height: 60px !important;
     font-size: 18px;
+  }
+  .bs_team_title{
+        font-size: .8rem;
   }
 }
 

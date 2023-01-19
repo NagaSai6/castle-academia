@@ -12,6 +12,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import {useCookies} from "react-cookie";
 import axios from "axios";
+import Logo from "./resources/images/Logo.svg";
 import {Row} from "react-bootstrap";
 
 import "./navbar.css";
@@ -90,12 +91,7 @@ export default function NavBar(props) {
     <Navbar bg="dark" expand="md" className="navbar_container" fixed="top">
      
         <Navbar.Brand href="/">
-          <div className="navbar_navbrand">
-            <h1 className="navbar_header">
-              <span style={{ color: "#FDD03B" }}>CASTLE</span> ACADEMIA
-            </h1>
-            <p className="navbar_desc">A home for your dream career</p>
-          </div>
+                <a href="/"><img src={Logo} alt="" srcset="" /></a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse

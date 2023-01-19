@@ -10,6 +10,7 @@ import fingerIcon from "./resources/images/finger.svg";
 import contactLogo from "./resources/images/contact.svg";
 import emailLogo from "./resources/images/email.svg";
 import locationLogo from "./resources/images/location.svg";
+import Logo from "./resources/images/Logo.svg";
 import { FiSend } from "react-icons/fi";
 
 import Form from "react-bootstrap/Form";
@@ -21,15 +22,14 @@ export default function Footer() {
     <div className="footer-container">
       <Row className="fc_sub_container g-0">
         <Col style={{ justifyContent: "center" }}>
-          <h1 className="fc_part1_h1">
-            CASTLE <span className="fc_part1_header">ACADEMIA</span>
-          </h1>
-          <p className="fc_part1_desc mb-2">A home for your dream career</p>
+           <div className="my-2">
+           <img src={Logo} alt="" srcset="" />
+           </div>
 
-          <p style={{ display: "inline-flex" }}>
+          <p style={{ display: "inline-flex",color : "#fff" }}>
             Copyright @ {year} Castle Academia.
           </p>
-          <p>All rights reserved.</p>
+          <p style={{color : "#fff" }}>All rights reserved.</p>
           <div className="fc_team_social_media my-2">
             <a className="fc_social_media_button" href="https://www.facebook.com/profile.php?id=100089498376775">
               <img className="bs_social_media_icon" src={facebookLogo} />
@@ -53,39 +53,39 @@ export default function Footer() {
         </Col>
 
         <Col lg={2} className="fc_services_section">
-          <h4>Sevices</h4>
+          <h4 className="fc_text">Sevices</h4>
           <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={fingerIcon} alt="" srcset="" />
-            <p className="mx-2">CRT Training</p>
+            <img src={fingerIcon} alt="" srcset="" className="fc_logo" />
+            <p className="mx-2 fc_text">CRT Training</p>
           </div>
           <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={fingerIcon} alt="" srcset="" />
-            <p className="mx-2">Start Up Plan</p>
+            <img src={fingerIcon} alt="" srcset="" className="fc_logo" />
+            <p className="mx-2 fc_text">Start Up Plan</p>
           </div>
           <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={fingerIcon} alt="" srcset="" />
-            <p className="mx-2">Abroad Studies</p>
+            <img src={fingerIcon} alt="" srcset="" className="fc_logo" />
+            <p className="mx-2 fc_text">Abroad Studies</p>
           </div>
         </Col>
 
         <Col lg={2} className="fc_services_section">
-          <h4>Addresss</h4>
+          <h4 className="fc_text">Addresss</h4>
           <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={locationLogo} alt="" srcset="" />
-            <p className="mx-1">373 William Blvd, MA 2721 , USA</p>
+            <img src={locationLogo} alt="" srcset="" className="fc_logo" />
+            <p className="mx-1 fc_text">373 William Blvd, MA 2721 , USA</p>
           </div>
           <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={contactLogo} alt="" srcset="" />
-            <p className="mx-1">(+001)123-54678</p>
+            <img src={contactLogo} alt="" srcset="" className="fc_logo" />
+            <p className="mx-1 fc_text">(+001)123-54678</p>
           </div>
           <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={emailLogo} alt="" srcset="" />
-            <p className="mx-1">support@castleacademia.com</p>
+            <img src={emailLogo} alt="" srcset="" className="fc_logo" />
+            <p className="mx-1 fc_text">support@castleacademia.com</p>
           </div>
         </Col>
 
         <Col lg={4}>
-          <h4>Get Updates</h4>
+          <h4 className="fc_text">Get Updates</h4>
           <InputGroup className="mb-3" style={{ width: "70%" }}>
             <Form.Control
               style={{ borderRadius: "0 !important" }}

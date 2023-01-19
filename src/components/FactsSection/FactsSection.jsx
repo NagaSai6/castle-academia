@@ -42,7 +42,7 @@ export default function FactsSection() {
               <p className="fs_cards_desc">We have top-tier professionals experts who hold no less than 15+ years of experience in the respective field.</p>
             </div>
           </Col>
-          {/* <Col>
+          <Col>
             <div className="fs_cards">
               <h6 className="fs_header_name">Success</h6>
 
@@ -50,7 +50,7 @@ export default function FactsSection() {
 
               <p className="fs_cards_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
             </div>
-          </Col> */}
+          </Col>
         </Row>
       </div>
     </div>

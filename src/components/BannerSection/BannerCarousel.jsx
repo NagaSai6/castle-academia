@@ -2,12 +2,10 @@ import React from "react";
 import { Carousel, Card } from "react-bootstrap";
 import facebookLogo from "./resources/images/facebook.png";
 import linkedInLogo from "./resources/images/linkedin.png";
-import twitterLogo from "./resources/images/twitter.png";
 import instagramLogo from "./resources/images/instagram.png";
 import whatsappLogo from "./resources/images/whatsapp.png";
-import achievementLogo from "./resources/images/badge.png";
-import educationLogo from "./resources/images/mortarboard.png";
-import experienceLogo from "./resources/images/portfolio.png";
+import directorLogo from "../NavBar/resources/images/director.jpg";
+import ceoLogo from "../NavBar/resources/images/CEO.png";
 
 export default function BannerCarousel(props) {
   if (props.teamData.length) {
@@ -15,7 +13,7 @@ export default function BannerCarousel(props) {
       return (
         <Carousel.Item>
           <Card style={{ position: "relative" }}>
-            <Card.Img variant="top" src={item.imageSrc} />
+            <Card.Img variant="top" className="bs_team_mate_img" src={require(`../NavBar/resources/images/${item.imageSrc}`)} />
             <h4 className="bs_team_title">{item.name}</h4>
             <h4 className="bs_team_designation">{item.designation}</h4>
             <div className="bs_team_social_media">
@@ -61,7 +59,7 @@ export default function BannerCarousel(props) {
                 </div> */}
               </div>
 
-              <div className="bs_desc_section mt-3">
+              <div className="bs_desc_section mt-2">
                 <h6>{item.descHeader}</h6>
                 <p className="bs_about_carousel_desc">{item.desc}</p>
               </div>
