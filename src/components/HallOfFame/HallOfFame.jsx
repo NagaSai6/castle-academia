@@ -23,7 +23,7 @@ export default function HallOfFame() {
         <div className="" style={{marginTop : "40px"}}>
           {/* <img className="hof_image_container mt-3" style={{visibility : "hidden"}} src={item.imageUrl} alt="" srcset="" /> */}
            <p><b>{item.name}</b></p>
-           {/* <p>{item.designation}</p> */}
+           <p>{item.designation}</p>
         </div>
 
         

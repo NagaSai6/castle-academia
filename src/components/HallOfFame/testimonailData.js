@@ -2,7 +2,7 @@ export const testimonialData = [
     {
 
         name : "Naman jain",
-        designation : "NA",
+        designation : "SDE-1",
         testimonial : "It's been a pleasure learning with Castle Academia. It was extremely beneficial to me in terms of affordable education. Thank you, Castle Academia.",
         imageUrl : "https://randomuser.me/api/portraits/med/men/75.jpg"
 
@@ -10,7 +10,7 @@ export const testimonialData = [
     {
 
         name : "Pratik ojha",
-        designation : "NA",
+        designation : "Data Engineer",
         testimonial : "Castle Academia's course is extremely well-structured. I would suggest anyone looking to get started with a decent product-based firm then look into Castle Academia.",
         imageUrl : "https://randomuser.me/api/portraits/med/men/76.jpg"
 
@@ -18,7 +18,7 @@ export const testimonialData = [
     {
 
         name : "sushma naik",
-        designation : "NA",
+        designation : "Consultant",
         testimonial : "I've always wanted to establish a business, and this platform not only helped me understand the startup ecosystem but also allowed me to communicate closely with the founders and chairs of well-known startups.",
         imageUrl : "https://randomuser.me/api/portraits/med/men/87.jpg"
 
@@ -27,7 +27,7 @@ export const testimonialData = [
     {
 
         name : "Ajay roy",
-        designation : "NA",
+        designation : "Student",
         testimonial : "Thank you so much, Castle Academia! I was enrolled to my favourite university, Arizona State University, and received 50% of my scholarship thanks to the assistance of your overseas team.",
         imageUrl : "https://randomuser.me/api/portraits/med/men/66.jpg"
 
@@ -36,7 +36,7 @@ export const testimonialData = [
     {
 
         name : "Preeti shah",
-        designation : "NAr",
+        designation : "SDE-2",
         testimonial : "I learned how to create a startup within  budget with the help of this platform.",
         imageUrl : "https://randomuser.me/api/portraits/med/men/70.jpg"
 
@@ -45,7 +45,7 @@ export const testimonialData = [
     {
 
         name : "Preeti Dixit",
-        designation : "NA",
+        designation : "DevOps Engineer",
         testimonial : "Overall I enjoyed the way of teaching where mentor explained until we get the concept.",
         imageUrl : "https://randomuser.me/api/portraits/med/men/63.jpg"
 
