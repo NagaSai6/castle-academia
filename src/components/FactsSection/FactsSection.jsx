@@ -17,11 +17,15 @@ export default function FactsSection() {
         <Row>
           <Col>
             <div className="fs_cards">
-              <h6 className="fs_header_name">Students</h6>
+          <div>
+          <h6 className="fs_header_name">Students</h6>
 
-              <h2 className="fs_header_metric">2.5K+</h2>
+<h2 className="fs_header_metric">2.5K+</h2>
+          </div>
 
-              <p className="fs_cards_desc">Number of students successfully enrolled</p>
+             <div className="">
+             <p className="fs_cards_desc mt-auto">Number of students successfully enrolled</p>
+             </div>
             </div>
           </Col>
           <Col>
@@ -48,7 +52,7 @@ export default function FactsSection() {
 
               <h2 className="fs_header_metric">98%</h2>
 
-              <p className="fs_cards_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+              <p className="fs_cards_desc"> 2.5k+ students had succesfully completed achieved their dream career path.</p>
             </div>
           </Col>
         </Row>
