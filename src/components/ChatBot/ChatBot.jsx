@@ -98,7 +98,7 @@ class ChatBotForm extends Component {
       <ChatBot
         width="330px"
         enableMobileAutoFocus={true}
-        bubbleStyle={{ backgroundColor: "#FDD03B" }}
+        bubbleStyle={{ backgroundColor: "#000" }}
         floatingStyle={{ backgroundColor: "#000" }}
         headerTitle="Castle Academia"
         floating={true}

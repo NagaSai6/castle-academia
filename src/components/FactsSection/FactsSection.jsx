@@ -6,7 +6,7 @@ export default function FactsSection() {
   return (
     <div className="fs_container">
       <h1>Our Standout Progress</h1>
-      <div style={{ width: "12%" }} class="horizontal_dotted_line"></div>
+      <div style={{ width: "8%" }} class="horizontal_dotted_line"></div>
       {/* <p className="fs_desc">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat

@@ -16,9 +16,9 @@ export default function AchieversSection() {
     <div  className="cs_container mx-auto">
         <h2>Our Achievers Works At</h2>
         <div class="horizontal_dotted_line"></div>
-        <p className="cs_desc">
+        {/* <p className="cs_desc">
         We just got featured in the following magazines and it has been the most incredible journey. We work with the best fashion magazines across the world 
-      </p>
+      </p> */}
       <Row className="as_logo_parent_container">
         <Col className='as_logo_container mx-2 my-2'> 
             <img src={ dribbble_logo} alt="" srcset="" />

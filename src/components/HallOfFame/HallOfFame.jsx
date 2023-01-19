@@ -68,7 +68,7 @@ export default function HallOfFame() {
   return (
     <div className="hof_container">
       <h1>Hall of Fame</h1>
-      <div style={{ width: "12%" }} class="horizontal_dotted_line"></div>
+      <div style={{ width: "8%" }} class="horizontal_dotted_line"></div>
        <Slider {...settings}>
             {carousel_items_hof}
        </Slider>

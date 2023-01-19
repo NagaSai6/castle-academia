@@ -5,11 +5,11 @@
 }
 
 .horizontal_dotted_line {
-  margin: 20px auto;
+  margin: 20px auto 50px auto;
   height: 2px;
   background: repeating-linear-gradient(90deg, #000 0 5px, #0000 0 7px);
   background-size: 25% 2px;
-  width: 25%;
+  width: 13%;
 }
 .cs_card {
   height: 245px !important;
