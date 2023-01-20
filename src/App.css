@@ -1,6 +1,6 @@
 /* fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Roboto:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Roboto:wght@300;500&display=swap');
 
 .rsc > .rsc-container {
   /* top: 100px !important; */

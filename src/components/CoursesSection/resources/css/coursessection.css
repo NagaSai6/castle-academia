@@ -1,6 +1,6 @@
 .cs_container {
   text-align: center;
-  width: 60%;
+  width: 80%;
   padding: 50px;
 }
 
@@ -12,15 +12,18 @@
   width: 13%;
 }
 .cs_card {
-  height: 245px !important;
-  transition: transform .2s; 
+  height: 300px !important;
+  width: 300px !important;
+  transition: transform 0.2s;
 }
-.cs_card:hover{
+.cs_card:hover {
   transform: scale(1.1);
 }
 .cs_card_image {
   background: #fdd03b;
   min-height: 140px !important;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .cs_desc {
   font-family: "Roboto";
@@ -36,9 +39,50 @@
 
   color: #6a6a6a;
 }
+.cs_back_card_body_header {
+  justify-content: space-between;
+}
+.cs_back_card_body_header_text {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.cs_back_card_body_points {
+  color: #fff;
+  text-align: left;
+  font-size: 16px;
+  padding-left: 7px;
+}
+.cs_back_card_body_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 14px;
+  gap: 10px;
+  width: 160px;
+  height: 42px;
+  background: #fdd03b;
+  border-radius: 63px;
+  text-decoration: none;
+  color: #2D2D2D;
+  text-align: center;
+}
+.cs_back_card_body_button:hover{
+  color: #2d2d2d !important ;
+}
+.cs_back_card_body_button_container{
+  margin-top: 50px !important;
+}
+.cs_back_card_body_ul {
+  padding-left: 15px;
+}
+ul.cs_back_card_body_ul {
+  list-style-image: url("../images/Vector.svg");
+}
 .cs_course_desc {
   margin-top: 10px;
-  text-align: justify;
+  text-align: center;
 }
 .cs_course_desc > p {
   font-family: "Roboto";
@@ -46,16 +90,24 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  color: #6a6a6a;
+}
+.cs_back_card {
+  background: #000;
+  height: 300px !important;
+  width: 300px !important;
+}
+.cs_back_card_body {
+  border-radius: 15px;
 }
 
 .cs_card_body {
   background-color: #2d2d2d;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  align-items: center ;
+  align-items: center;
   justify-content: center;
   display: flex;
- 
 }
 .cs_card_text {
   color: #ffff;
