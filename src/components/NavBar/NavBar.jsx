@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, {useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -13,7 +13,7 @@ import DropdownButton from "react-bootstrap/DropdownButton";
 import {useCookies} from "react-cookie";
 import axios from "axios";
 import Logo from "./resources/images/Logo.svg";
-import {Row} from "react-bootstrap";
+import notificationLogo from "./resources/images/bell_ring.svg";
 
 
 import "./navbar.css";
@@ -122,7 +122,15 @@ export default function NavBar(props) {
               </Nav.Link>
             )}
             {cookies["auth-token"] && (
+              <div className="d-flex">
+                <div className="my-auto">
+                <a href="http://">
+               <img src={notificationLogo} alt="" />
+               </a>
+                </div>
+             
               <DropdownButton
+               align={'end'}
                 id="dropdown-item-button"
                 className="my-auto"
                 title={
@@ -161,7 +169,7 @@ export default function NavBar(props) {
                     </div>
                   </div>
                 </Dropdown.ItemText>
-                <Dropdown.Item as ="InputGroup">
+                {/* <Dropdown.Item as ="InputGroup">
                   <InputGroup className="mt-2 mb-3">
                     <Form.Control
                       placeholder="Search"
@@ -173,8 +181,8 @@ export default function NavBar(props) {
                       <BsSearch />
                     </InputGroup.Text>
                   </InputGroup>
-                </Dropdown.Item>
-                <Dropdown.Item as="button">
+                </Dropdown.Item> */}
+                {/* <Dropdown.Item as="button">
                   <div className="d-flex justify-content-between">
                     <p>Messages</p>
                     <p
@@ -184,14 +192,15 @@ export default function NavBar(props) {
                       03
                     </p>
                   </div>
-                </Dropdown.Item>
-                <Dropdown.Item as="button">Manage Subscription</Dropdown.Item>
-                <Dropdown.Item as="button">Certifications</Dropdown.Item>
+                </Dropdown.Item> */}
+                {/* <Dropdown.Item as="button">Manage Subscription</Dropdown.Item> */}
+                {/* <Dropdown.Item as="button">Certifications</Dropdown.Item> */}
                 <Dropdown.Divider />
                 <Dropdown.Item as="a" href="/courses-overview">Courses Overview</Dropdown.Item>
-                <Dropdown.Item as="button">settings</Dropdown.Item>
+                {/* <Dropdown.Item as="button">settings</Dropdown.Item> */}
                 <Dropdown.Item as="button" onClick={triggerLogOut}>Log out</Dropdown.Item>
               </DropdownButton>
+              </div>
             )}
            
   
