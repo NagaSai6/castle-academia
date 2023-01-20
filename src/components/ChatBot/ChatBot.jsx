@@ -14,7 +14,8 @@ function SendMail(props) {
   };
   const configuration = {
     method: "post",
-    url: "https://castle-academia-server.onrender.com/send-mail-chatbot",
+    url: "https://castle-academia-server.onrender.com/send-mail-form-submission",
+    // url : "http://localhost:9000/send-mail-form-submission",
     data: data,
   };
   axios(configuration)
@@ -24,7 +25,7 @@ function SendMail(props) {
     .catch((err) => {
       console.log(err);
     });
-  return "Encrypting Your Data. Please wait..";
+  return "Encrypting Your Data. Please wait.Thanks! Your data was submitted successfully!";
 }
 
 class Review extends Component {
@@ -128,7 +129,7 @@ class ChatBotForm extends Component {
             id: "courses",
             options: [
               { value: "CRT Training", label: "CRT Training", trigger: "5" },
-              { value: "Start Up Plan", label: "Start-Up Plan", trigger: "5" },
+              { value: "Startup Plan", label: "Startup Plan", trigger: "5" },
               {
                 value: "Abroad Studies",
                 label: "Abroad Studies",
@@ -148,7 +149,7 @@ class ChatBotForm extends Component {
             validator: (value) => {
               if (!value.length) {
                 return "Enter Valid Number";
-              } else if (value.length < 6) {
+              } else if (value.length < 10) {
                 return "Enter Valid Phone Number";
               } else if (value.length > 120) {
                 return `${value}? Come on!`;
@@ -178,8 +179,8 @@ class ChatBotForm extends Component {
           },
           {
             id: "7",
-            message: "Great! Check out your summary",
-            trigger: "review",
+            message: "Great!",
+            trigger: "end-message",
           },
 
           {
@@ -197,13 +198,12 @@ class ChatBotForm extends Component {
             id: "update-question",
             options: [
               { value: "yes", label: "Yes", trigger: "update-yes" },
-              { value: "no", label: "No", trigger: "send-data" },
+              { value: "no", label: "No", trigger: "end-message" },
             ],
           },
           {
             id: "send-data",
             component: <SendMail />,
-            asMessage: true,
             trigger: "end-message",
           },
           {
@@ -246,7 +246,7 @@ class ChatBotForm extends Component {
           },
           {
             id: "end-message",
-            message: "Thanks! Your data was submitted successfully!",
+            component : (<SendMail />),
             end: true,
           },
         ]}
