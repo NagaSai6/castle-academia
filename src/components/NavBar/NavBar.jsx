@@ -15,6 +15,7 @@ import axios from "axios";
 import Logo from "./resources/images/Logo.svg";
 import {Row} from "react-bootstrap";
 
+
 import "./navbar.css";
 import { Col } from "react-bootstrap";
 
@@ -115,10 +116,6 @@ export default function NavBar(props) {
 
            {!cookies["auth-token"] && (
               <Nav.Link href="#" className="my-auto mx-auto">
-                {/* <button className="navbar_button">
-                  <img src={siginLogo} />
-                  <span className="mx-2">Register</span>
-                </button> */}
                 <div id="googleSignInButton">
 
                 </div>

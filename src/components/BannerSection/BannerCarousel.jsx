@@ -4,8 +4,7 @@ import facebookLogo from "./resources/images/facebook.png";
 import linkedInLogo from "./resources/images/linkedin.png";
 import instagramLogo from "./resources/images/instagram.png";
 import whatsappLogo from "./resources/images/whatsapp.png";
-import directorLogo from "../NavBar/resources/images/director.jpg";
-import ceoLogo from "../NavBar/resources/images/CEO.png";
+
 
 export default function BannerCarousel(props) {
   if (props.teamData.length) {
@@ -13,21 +12,23 @@ export default function BannerCarousel(props) {
       return (
         <Carousel.Item>
           <Card style={{ position: "relative" }}>
-            <Card.Img variant="top" className="bs_team_mate_img" src={require(`../NavBar/resources/images/${item.imageSrc}`)} />
+            <Card.Img variant="top" className="bs_team_mate_img" src={require(`./resources/images/${item.imageSrc}`)} />
             <h4 className="bs_team_title">{item.name}</h4>
             <h4 className="bs_team_designation">{item.designation}</h4>
             <div className="bs_team_social_media">
-              <a className="bs_social_media_button-first-child" href="https://www.facebook.com/profile.php?id=100089498376775">
-                <img className="bs_social_media_icon" src={facebookLogo} />
+            
+              <a className="bs_social_media_button-first-child" href={item.whatsapp.url}>
+              <img className="bs_social_media_icon" src={whatsappLogo} />
+                
               </a>
-              <a className="bs_social_media_button" href="https://www.linkedin.com/in/castle-academia-093877261">
+              <a className="bs_social_media_button" href={item.linkedin.url}>
                 <img className="bs_social_media_icon" src={linkedInLogo} />
               </a>
-              <a className="bs_social_media_button" href="https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=">
+              <a className="bs_social_media_button" href={item.instagram.url}>
                 <img className="bs_social_media_icon" src={instagramLogo} />
               </a>
-              <a target="_blank"  className="bs_social_media_button" href="https://chat.whatsapp.com/IpW1IfXOmv4EVIHM61wITY">
-                <img className="bs_social_media_icon" src={whatsappLogo} />
+              <a target="_blank"  className="bs_social_media_button" href={item.facebook.url}>
+              <img className="bs_social_media_icon" src={facebookLogo} />
               </a>
             </div>
             <Card.Body>

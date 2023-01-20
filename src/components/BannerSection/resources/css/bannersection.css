@@ -37,7 +37,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 34px;
+  font-size: 45px;
 
   letter-spacing: 0.05em;
   color: #ffffff;
@@ -120,21 +120,23 @@
   top: 133px;
   z-index: 4;
   left: 17px;
-  color: #000;
-  font-size: 1.25rem;
+  color: #fff;
+  font-size:32px;
+  font-family: 'Roboto';
 }
 .bs_team_designation {
   position: absolute;
   top: 173px;
   z-index: 4;
   left: 17px;
-  color: #000;
-  font-size: 1.3rem;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Roboto';
 }
 .bs_team_social_media {
   display: flex;
   position: absolute;
-  top: 235px;
+  top: 253px;
   left: 30px;
 }
 .bs_social_media_icon {
@@ -188,6 +190,9 @@
     height: auto !important;
     width: auto !important;
   }
+  .bs_social_media_icon{
+    height: 30px;
+  }
 
   .carousel-control-next {
     margin-right: auto !important;
@@ -208,7 +213,7 @@
     left: 20px;
   }
   .bs_team_social_media {
-    top: 150px;
+    top: 145px;
     left: 20px;
   }
 
@@ -240,7 +245,10 @@
     font-size: 18px;
   }
   .bs_team_title{
-        font-size: .8rem;
+        font-size: 18px;
+  }
+  .bs_team_designation{
+    font-size: 18px;
   }
 }
 

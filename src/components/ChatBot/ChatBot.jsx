@@ -92,7 +92,24 @@ Review.defaultProps = {
   steps: undefined,
 };
 
+
 class ChatBotForm extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {clear : true}
+  // }
+  
+
+  // componentWillMount() {
+  //   let handleClear = () => {
+  //     this.setState({ clear: true }, () => {
+  //       this.setState({ clear: false });
+  //     });
+  //   }
+  // }
+
+
+  
  
   render() {
     return (
@@ -247,8 +264,13 @@ class ChatBotForm extends Component {
           {
             id: "end-message",
             component : (<SendMail />),
-            end: true,
+            trigger : "refer-chat"
           },
+          {
+            id : "refer-chat",
+            component : (<this.handleClear />),
+            end : true
+          }
         ]}
       />
     );

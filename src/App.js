@@ -4,6 +4,7 @@ import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import ErrorPage from "./components/ErrorPage/ErrorPage";
 import ChatBotForm from "./components/ChatBot/ChatBot";
+import whatsappLogo from "./components/BannerSection/resources/images/whatsapp.png";
 import SignIn from "./components/SignIn/SignIn";
 // lib
 import ProtectedRoutes from "./lib/ProtectedRoutes";
@@ -24,7 +25,7 @@ import { useCookies } from "react-cookie";
 
 function App() {
   // state
- 
+
   let [cookies] = useCookies(["auth-token"]);
   let [userData, setUserData] = useState({ isExist: false, data: {} });
   let [isPremiumUser, setPremiumUser] = useState(false);
@@ -49,7 +50,6 @@ function App() {
         .then((res) => {
           let role = res.data.data;
           console.log(role);
-       
         })
         .catch((err) => {
           console.log(err);
@@ -57,13 +57,13 @@ function App() {
     }
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     let audio = new Audio("https://www.fesliyanstudios.com/play-mp3/387");
     let chatBotButton = document.getElementsByClassName("rsc-float-button");
-    chatBotButton[0].addEventListener("click",()=>{
+    chatBotButton[0].addEventListener("click", () => {
       audio.play();
-    })
-  },[])
+    });
+  }, []);
 
   return (
     <>
@@ -73,21 +73,25 @@ function App() {
         <Routes>
           <Route path="/" exact element={<HomePage />} />
           <Route
-              path="/courses-overview"
-              exact
-              element={
-                <ProtectedRoutes isPremiumUser={isPremiumUser}>
-                  <CoursesOverView />
-                </ProtectedRoutes>
-              }
-            />
+            path="/courses-overview"
+            exact
+            element={
+              <ProtectedRoutes isPremiumUser={isPremiumUser}>
+                <CoursesOverView />
+              </ProtectedRoutes>
+            }
+          />
 
           {/* {!cookies["auth-token"] && <Route path="/sign-in" exact element={<SignIn />} />} */}
           {/* <Route path="/sign-in" element={<Navigate replace to={"/"} />} /> */}
 
           <Route path="*" element={<ErrorPage />} />
         </Routes>
-
+        <div className="whatsappBot">
+          <a target={"_blank"} href="https://chat.whatsapp.com/IpW1IfXOmv4EVIHM61wITY">
+            <img style={{ width: "36px" }} src={whatsappLogo} />
+          </a>
+        </div>
         <ChatBotForm />
       </Router>
     </>
