@@ -10,7 +10,7 @@ export default function CourseLayout(props) {
   return (
     <Col md="3" className='mb-4' onClick={triggerDownload}>
     <Card style={{ borderRadius: "15px" }} className="cs_card">
-      <Card.Img className="cs_card_image" style={{ height: "2000px !important"}} variant="top" src={require(`../CoursersOverView/${props.type}/resources/images/${props.data.image}`)} />
+      <Card.Img className="cs_card_image" style={{ height: "100%"}} variant="top" src={require(`../CoursersOverView/${props.type}/resources/images/${props.data.image}`)} />
       <Card.Body className="cs_card_body">
         <Card.Text className="cs_card_text">{props.data['sub-category']}</Card.Text>
         <a target="_blank" href={props.data['file-link']} className='mx-2 px-1' style={{border : 0,borderRadius : '8px',cursor:'pointer',textDecoration:'none',color:'#000',background:'#fdd03b'}} role="button" download>
