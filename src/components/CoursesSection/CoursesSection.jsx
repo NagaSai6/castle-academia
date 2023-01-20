@@ -48,7 +48,7 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           </ReactCardFlip>
-          <div className="cs_course_desc">
+          <div className="cs_course_desc" style={{width : "300px"}}>
             <p>Learn core industry skills from top edtech instructors.We assist in hunting new job opportunities and our expertise helps you land on dream job through mentoring in networking, interviewing, and placement techniques.</p>
           </div>
           
@@ -60,7 +60,7 @@ export default function CoursesSection() {
           <Card onMouseEnter={()=> setisFlippedStartUp(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card">
             <Card.Img className="cs_card_image" variant="top" src={startup_plan_logo} />
             <Card.Body className="cs_card_body">
-              <Card.Text className="cs_card_text">STARTUP PlAN</Card.Text>
+              <Card.Text className="cs_card_text">STARTUP PLAN</Card.Text>
             </Card.Body>
           </Card>
 
@@ -82,7 +82,7 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           </ReactCardFlip>
-          <div className="cs_course_desc">
+          <div className="cs_course_desc" style={{width : "300px"}}>
             <p> We personally  assist & modify plan according to your ideation followed by building startup from scratch to seed funding which includes leadership management ,pitch and product readiness, 1:1 session with CEO's.</p>
           </div>
         </Col>
@@ -114,7 +114,7 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           </ReactCardFlip>
-          <div className="cs_course_desc">
+          <div className="cs_course_desc" style={{width : "300px"}}>
             <p> Discover and interact with Alumni of your dream college who once travelled the same route as you.
 We provide A-Z overseas services, from assisting you in selecting the best university to enrolling in it
 </p>

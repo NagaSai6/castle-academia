@@ -8,9 +8,13 @@ import { Circles } from "react-loader-spinner";
 
 
 export default function FormSection() {
-  const [formSubmit, setFormSubmit] = useState(false);
-  const[isErr,setErr] = useState(false);
-  const [show, setShow] = useState(false);
+  const [formTriggered, setFormTriggered] = useState(false);
+  const[showAlert,setShowAlert] = useState(false);
+  const [alertMsg,setAlertMsg] = useState({
+    key : '',
+    msg : ''
+  })
+  
   const [formData,setFormData] = useState({
     name : '',
     email : '',
@@ -32,8 +36,8 @@ export default function FormSection() {
   }
   function handleFormSubmit(e){
     e.preventDefault();
-     setErr(false);
-    setFormSubmit(true);
+
+   
     const configuration = {
       method: "post",
       url: "https://castle-academia-server.onrender.com/send-mail-form-submission",
@@ -42,9 +46,10 @@ export default function FormSection() {
     };
 
     axios(configuration).then((result)=>{
-      setFormSubmit(false);
-      setErr(false);
-      setShow(true);
+      // setFormSubmit(false);
+      // setErr(false);
+      // setShow(true);
+      setShowAlert(true);
       setFormData({
         name : '',
         email : '',
@@ -52,13 +57,16 @@ export default function FormSection() {
         message : ''
       });
 
-      console.log(result)
+    setFormTriggered(false);
+    setAlertMsg({key : 'success', msg : "Your Submission is Successful"})
            
     }).catch((err)=>{
-      setFormSubmit(false);
-      setErr(true);
-      setShow(true);
-      console.log(err)
+      setShowAlert (true);
+      setAlertMsg({key : 'danger', msg : "Invalid Form Submission Try again"})
+      // setFormSubmit(false);
+      // setErr(true);
+      // setShow(true);
+      // console.log(err)
     })
   }
   return (
@@ -71,8 +79,9 @@ export default function FormSection() {
         </Col>
         <Col>
           <div className="fsc_form_container">
-            {(show && !isErr) ? <Alert onClose={() => setShow(false)} key={'sucess'} variant="success" dismissible> Submitted Successfully </Alert> : ''}
-            {(show && isErr) ?  <Alert onClose={() => setShow(false)} key={'danger'} variant="danger" dismissible> Something is went wrong </Alert> : ''}
+            {showAlert ? <Alert onClose={() => setShowAlert(false)} key={alertMsg.key} variant={alertMsg.key} dismissible> {alertMsg.msg} </Alert> : ''}
+            {/* {(show && !isErr) ? <Alert onClose={() => setShow(false)} key={'sucess'} variant="success" dismissible> Submitted Successfully </Alert> : ''}
+            {(show && isErr) ?  <Alert onClose={() => setShow(false)} key={'danger'} variant="danger" dismissible> Something is went wrong </Alert> : ''} */}
             <Form onSubmit={handleFormSubmit}>
                 <h2 className="my-3">Enter Details</h2>
               <Row>
@@ -99,7 +108,7 @@ export default function FormSection() {
               </Form.Group>
 
               <button type="submit" className="fsc_submit_button">
-              {formSubmit && <Circles height={20} width={20} color="#000"/>} Submit</button>
+              {formTriggered && <Circles height={20} width={20} color="#000"/>} Submit</button>
             </Form>
           </div>
         </Col>

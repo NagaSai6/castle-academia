@@ -1,16 +1,7 @@
 import React from 'react';
 import { Col, Card, } from "react-bootstrap";
 import {BsDownload} from "react-icons/bs";
-import crt_1 from "../CoursersOverView/CRTModuleSection/resources/images/crt_1.svg"
-import crt_2 from "../CoursersOverView/CRTModuleSection/resources/images/crt_2.svg";
-import crt_3 from "../CoursersOverView/CRTModuleSection/resources/images/crt_3.svg"
-import crt_4 from "../CoursersOverView/CRTModuleSection/resources/images/crt_4.svg"
 
-// import crt_1 from "../CoursersOverView/CRTModuleSection/resources/images/crt_1.svg"
-// import crt_2 from "../CoursersOverView/CRTModuleSection/resources/images/crt_2.svg";
-// import crt_3 from "../CoursersOverView/CRTModuleSection/resources/images/crt_3.svg"
-// import crt_4 from "../CoursersOverView/CRTModuleSection/resources/images/crt_4.svg"
-// import su_1 from "../CoursersOverView/StartUpModuleSection/resources/images/su_1.png"
 
 export default function CourseLayout(props) {
   function triggerDownload(){
