@@ -6,6 +6,7 @@ import AchieversSection from "../../components/AchieversSection/AchieversSection
 import FactsSection from "../../components/FactsSection/FactsSection";
 import FormSection from "../../components/FormSection/FormSection";
 import Footer from "../../components/Footer/Footer";
+import Advertisement from "../../components/Advertisements/Advertisement";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <AchieversSection />
       <FactsSection />
       <FormSection />
+       <Advertisement />
       <Footer />
     </>
   );

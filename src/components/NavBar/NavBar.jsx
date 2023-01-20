@@ -124,7 +124,7 @@ export default function NavBar(props) {
             {cookies["auth-token"] && (
               <div className="d-flex">
                 <div className="my-auto">
-                <a href="http://">
+                <a href="#ads">
                <img src={notificationLogo} alt="" />
                </a>
                 </div>
