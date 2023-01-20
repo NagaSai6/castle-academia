@@ -6,7 +6,7 @@ import CourseLayout from '../../common/CourseLayout';
 export default function AbroadModuleSection(props) {
   let abroad_content = props.abroad_data.data.map((item)=>{
     return (
-        <CourseLayout data={item} key={item._id} />
+        <CourseLayout data={item} key={item._id} type="AbroadModuleSection" />
     )
      
   })

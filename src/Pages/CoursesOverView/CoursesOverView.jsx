@@ -36,7 +36,7 @@ export default function CoursesOverView() {
         {dataLoaded ?  <div>
     <CRTModuleSection crt_data={crt_coursesData}/>
     <StartUpModuleSection startup_data={startup_coursesData}/>
-    {/* <AbroadModuleSection abroad_data={abroad_coursesData}/> */}
+    <AbroadModuleSection abroad_data={abroad_coursesData}/>
   </div> : <div style={{marginTop : '100px',display:'flex',justifyContent :'center',height : '90vh',width:'100%',alignContent : 'center'}}><MutatingDots secondaryColor= '#fdd03b' color="#fdd03b" /> </div>}
       </div>
   );
