@@ -69,18 +69,18 @@ export default function Footer() {
         </Col>
 
         <Col lg={2} className="fc_services_section">
-          <h4 className="fc_text">Addresss</h4>
-          <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={locationLogo} alt="" srcset="" className="fc_logo" />
-            <p className="mx-1 fc_text">373 William Blvd, MA 2721 , USA</p>
+          <h4 className="fc_text">Contact details</h4>
+          <div style={{ display: "flex",textDecoration : "none" }} className="fc_common_div">
+          <a href="tel:+911238948" style={{display : "flex"}}>
+              <img src={contactLogo} alt="" srcset="" className="fc_logo" />
+             <p className="mx-1 fc_text">+9191234299111</p>
+              </a>
           </div>
-          <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={contactLogo} alt="" srcset="" className="fc_logo" />
-            <p className="mx-1 fc_text">(+001)123-54678</p>
-          </div>
-          <div style={{ display: "flex" }} className="fc_common_div">
-            <img src={emailLogo} alt="" srcset="" className="fc_logo" />
-            <p className="mx-1 fc_text">support@castleacademia.com</p>
+          <div style={{ display: "flex" ,textDecoration : "none"}} className="fc_common_div">
+              <a style={{display : "flex"}} href="mailto:info@castleacademia.com">
+              <img src={emailLogo} alt="" srcset="" className="fc_logo" />
+              <p className="mx-1 fc_text">info@castleacademia.com</p>
+              </a>
           </div>
         </Col>
 
