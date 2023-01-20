@@ -24,9 +24,9 @@ export default function CoursesSection() {
         <Col md={4}>
           <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlipped} flipDirection="vertical" containerStyle={{transition : 'smooth'}}>
           <Card onMouseEnter={()=> setIsFlipped(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card">
-            <Card.Img className="cs_card_image" variant="top" src={crt_logo} />
+            <Card.Img className="cs_card_image" variant="top" src={crt_logo} height="2000"/>
             <Card.Body className="cs_card_body">
-              <Card.Text className="cs_card_text">CRT front TRAINING</Card.Text>
+              <Card.Text className="cs_card_text">CRT TRAINING</Card.Text>
             </Card.Body>
           </Card>
 
