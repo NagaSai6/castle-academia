@@ -11,6 +11,9 @@
 .as_logo_parent_container{
     display: flex;
 }
+.as_logo_container:hover{
+  background-color:  #FDD03B;
+}
 .as_logo{
   width: 112px;
 }
