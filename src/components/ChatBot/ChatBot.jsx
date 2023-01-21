@@ -25,7 +25,7 @@ function SendMail(props) {
     .catch((err) => {
       console.log(err);
     });
-  return "Encrypting Your Data. Please wait.Thanks! Your data was submitted successfully!";
+  return `Thanks ${data.name}, we will get back to you soon shortly`;
 }
 
 class Review extends Component {
@@ -264,7 +264,8 @@ class ChatBotForm extends Component {
           {
             id: "end-message",
             component : (<SendMail />),
-            trigger : "refer-chat"
+            asMessage : true ,
+            end : true
           },
           {
             id : "refer-chat",
