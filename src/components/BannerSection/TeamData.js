@@ -28,7 +28,7 @@ export const data = [
     }
   },
   {
-    name: "Mr. Namananda Saho",
+    name: "Mr. Namananda Sahu",
     designation: "Director",
     achievements: "Founder of Castle Academia",
     education: "MBA from Stanford University",
