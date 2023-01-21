@@ -1,15 +1,15 @@
-import React from "react";
+import React,{useState} from "react";
 import "./resources/css/footer.css";
 import facebookLogo from "../BannerSection/resources/images/facebook.png";
 import linkedInLogo from "../BannerSection/resources/images/linkedin.png";
-import twitterLogo from "../BannerSection/resources/images/twitter.png";
+// import twitterLogo from "../BannerSection/resources/images/twitter.png";
 import instagramLogo from "../BannerSection/resources/images/instagram.png";
-import discordLogo from "./resources/images/discord.png";
+// import discordLogo from "./resources/images/discord.png";
 import whatsappLogo from "../BannerSection/resources/images/whatsapp.png";
 import fingerIcon from "./resources/images/finger.svg";
 import contactLogo from "./resources/images/contact.svg";
 import emailLogo from "./resources/images/email.svg";
-import locationLogo from "./resources/images/location.svg";
+// import locationLogo from "./resources/images/location.svg";
 import Logo from "./resources/images/Logo.svg";
 import { FiSend } from "react-icons/fi";
 
@@ -18,6 +18,14 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { Row, Col } from "react-bootstrap";
 export default function Footer() {
   const year = new Date().getFullYear();
+  const [newsLetterMail,setNewsLetterMail] = useState({email : ''})
+  function saveUpdatesMail(e){
+     e.preventDefault();
+
+       setTimeout(()=>{
+          setNewsLetterMail({email : ''})
+       },1000)
+  }
   return (
     <div className="footer-container">
       <Row className="fc_sub_container g-0">
@@ -88,17 +96,21 @@ export default function Footer() {
 
         <Col lg={4}>
           <h4 className="fc_text">Get Updates</h4>
+          <Form onSubmit={saveUpdatesMail}>
           <InputGroup className="mb-3" style={{ width: "70%" }}>
             <Form.Control
               style={{ borderRadius: "0 !important" }}
               placeholder="Enter your email"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
+              value={newsLetterMail.email}
+              onChange={(e)=> setNewsLetterMail({email : e.target.value})}
             />
             <InputGroup.Text id="basic-addon2" >
-              <FiSend />
+               <button style={{border : "0"}} type="submit"><FiSend /></button>
             </InputGroup.Text>
           </InputGroup>
+          </Form>
         </Col>
       </Row>
     </div>
