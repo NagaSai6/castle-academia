@@ -14,6 +14,9 @@
   background-color: rgb(253, 208, 59) !important;
 }
 
+.rsc-ts-bubble,.rsc-os-option-element,.rsc-header > h2{
+  font-family: 'Roboto',sans-serif;
+}
 .iOCYje {
   color: #fff !important;
 }
