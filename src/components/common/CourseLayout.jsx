@@ -19,7 +19,7 @@ export default function CourseLayout(props) {
       </Card.Body>
 
     </Card>
-    <div className="cs_course_desc">
+    <div className="cs_course_desc" style={{width : "300px"}}>
       <p>
         {props.data.content}
       </p>
