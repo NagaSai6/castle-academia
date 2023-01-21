@@ -21,12 +21,13 @@ export default function BannerCarousel(props) {
               <img className="bs_social_media_icon" src={whatsappLogo} />
                 
               </a>
-              <a className="bs_social_media_button" href={item.linkedin.url}>
-                <img className="bs_social_media_icon" src={linkedInLogo} />
-              </a>
               <a className="bs_social_media_button" href={item.instagram.url}>
                 <img className="bs_social_media_icon" src={instagramLogo} />
               </a>
+              <a className="bs_social_media_button" href={item.linkedin.url}>
+                <img className="bs_social_media_icon" src={linkedInLogo} />
+              </a>
+
               <a target="_blank"  className="bs_social_media_button" href={item.facebook.url}>
               <img className="bs_social_media_icon" src={facebookLogo} />
               </a>

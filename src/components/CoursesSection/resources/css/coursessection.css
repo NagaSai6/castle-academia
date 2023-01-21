@@ -33,7 +33,7 @@
   line-height: 24px;
   /* or 150% */
 
-  text-align: justify;
+  text-align: center;
 
   /* Secondary Text Color */
 
@@ -82,7 +82,8 @@ ul.cs_back_card_body_ul {
 }
 .cs_course_desc {
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
+  padding-left: 2px;
 }
 .cs_course_desc > p {
   font-family: "Roboto";

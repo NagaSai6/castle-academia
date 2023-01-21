@@ -22,15 +22,15 @@ export default function CoursesSection() {
 
       <Row>
         <Col md={4}>
-          <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlipped} flipDirection="vertical" containerStyle={{transition : 'smooth'}}>
-          <Card onMouseEnter={()=> setIsFlipped(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card">
+          <ReactCardFlip infinite={false}  isFlipped={isFlipped} flipDirection="horizontal" containerStyle={{transition : 'smooth'}}>
+          <Card onMouseEnter={()=> setIsFlipped(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
             <Card.Img className="cs_card_image" variant="top" src={crt_logo} height="2000"/>
             <Card.Body className="cs_card_body">
               <Card.Text className="cs_card_text">CRT TRAINING</Card.Text>
             </Card.Body>
           </Card>
 
-          <Card onMouseLeave={()=> setIsFlipped(!isFlipped)} style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_back_card">
+          <Card onMouseLeave={()=> setIsFlipped(!isFlipped)} style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_back_card mx-auto">
             <Card.Body className="cs_back_card_body">
               <div className="d-flex cs_back_card_body_header" >
                 <img src={crtBackLogo} alt="" srcset="" />
@@ -48,7 +48,7 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           </ReactCardFlip>
-          <div className="cs_course_desc" style={{width : "300px"}}>
+          <div className="cs_course_desc mx-auto" style={{width : "300px"}}>
             <p>Learn core industry skills from top edtech instructors.We assist in hunting new job opportunities and our expertise helps you land on dream job through mentoring in networking, interviewing, and placement techniques.</p>
           </div>
           
@@ -56,15 +56,15 @@ export default function CoursesSection() {
 
 
         <Col md={4}>
-        <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlippedStartUp} flipDirection="vertical" containerStyle={{transition : 'smooth'}}>
-          <Card onMouseEnter={()=> setisFlippedStartUp(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card">
+        <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlippedStartUp}  containerStyle={{transition : 'smooth'}}>
+          <Card onMouseEnter={()=> setisFlippedStartUp(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
             <Card.Img className="cs_card_image" variant="top" src={startup_plan_logo} />
             <Card.Body className="cs_card_body">
               <Card.Text className="cs_card_text">STARTUP PLAN</Card.Text>
             </Card.Body>
           </Card>
 
-          <Card onMouseLeave={()=> setisFlippedStartUp(!isFlippedStartUp)} style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_back_card">
+          <Card onMouseLeave={()=> setisFlippedStartUp(!isFlippedStartUp)} style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_back_card mx-auto">
             <Card.Body className="cs_back_card_body">
               <div className="d-flex cs_back_card_body_header" >
                 <img src={crtBackLogo} alt="" srcset="" />
@@ -82,21 +82,21 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           </ReactCardFlip>
-          <div className="cs_course_desc" style={{width : "300px"}}>
+          <div className="cs_course_desc mx-auto" style={{width : "300px"}}>
             <p> We personally  assist & modify plan according to your ideation followed by building startup from scratch to seed funding which includes leadership management ,pitch and product readiness, 1:1 session with CEO's.</p>
           </div>
         </Col>
 
         <Col md={4}>
-        <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlippedAbroad} flipDirection="vertical" containerStyle={{transition : 'smooth'}}>
-          <Card onMouseEnter={()=> setisFlippedAbroad(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card">
+        <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlippedAbroad}  containerStyle={{transition : 'smooth'}}>
+          <Card onMouseEnter={()=> setisFlippedAbroad(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
             <Card.Img className="cs_card_image" variant="top" src={abroad_studies_logo} />
             <Card.Body className="cs_card_body">
               <Card.Text className="cs_card_text">ABROAD STUDIES</Card.Text>
             </Card.Body>
           </Card>
 
-          <Card onMouseLeave={()=> setisFlippedAbroad(!isFlippedAbroad)} style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_back_card">
+          <Card onMouseLeave={()=> setisFlippedAbroad(!isFlippedAbroad)} style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_back_card mx-auto">
             <Card.Body className="cs_back_card_body">
               <div className="d-flex cs_back_card_body_header" >
                 <img src={crtBackLogo} alt="" srcset="" />
@@ -114,7 +114,7 @@ export default function CoursesSection() {
             </Card.Body>
           </Card>
           </ReactCardFlip>
-          <div className="cs_course_desc" style={{width : "300px"}}>
+          <div className="cs_course_desc mx-auto" style={{width : "300px"}}>
             <p> Discover and interact with Alumni of your dream college who once travelled the same route as you.
 We provide A-Z overseas services, from assisting you in selecting the best university to enrolling in it
 </p>

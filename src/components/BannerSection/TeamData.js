@@ -1,14 +1,15 @@
 export const data = [
   {
-    name: "Mr. Namananda Saho",
-    designation: "Director",
+    name: "Mrs. Rona Sahoo",
+    designation: "Chairman",
     achievements: "Founder of Castle Academia",
     education: "MBA from Stanford University",
     experience: "12 Years experience in EdTech Industry",
-    imageSrc: "director.jpeg",
-    descHeader: "Founder & Director of Castle Academia",
+    imageSrc: "chairman.jpeg",
+    descHeader: "Founder & Chairman of Castle Academia",
     desc:
-      "Mr. Namananda Sahu is the Director of a number of businesses. As a billion-dollar venture entrepreneur, he always believes that don't try until it gets right, try until it doesn't get wrong.",
+      "Rona Sahoo is a visionary chairman of castle academia and director of various other businesses. As an entrepreneur, she constantly encourages new talents to be daring and experiment with every ambition to make it a reality. She strongly believes that education is a passport to the future, tomorrow belongs to those who prepare for it now.",
+
     instagram: {
       isExist: true,
       url: "https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=",
@@ -27,16 +28,15 @@ export const data = [
     }
   },
   {
-    name: "Mrs. Rona Sahoo",
-    designation: "Chairman",
+    name: "Mr. Namananda Saho",
+    designation: "Director",
     achievements: "Founder of Castle Academia",
     education: "MBA from Stanford University",
     experience: "12 Years experience in EdTech Industry",
-    imageSrc: "chairman.jpeg",
-    descHeader: "Founder & Chairman of Castle Academia",
+    imageSrc: "director.jpeg",
+    descHeader: "Founder & Director of Castle Academia",
     desc:
-      "Rona Sahoo is a visionary chairman of castle academia and director of various other businesses. As an entrepreneur, she constantly encourages new talents to be daring and experiment with every ambition to make it a reality. She strongly believes that education is a passport to the future, tomorrow belongs to those who prepare for it now.",
-
+      "Mr. Namananda Sahu is the Director of a number of businesses. As a billion-dollar venture entrepreneur, he always believes that don't try until it gets right, try until it doesn't get wrong.",
     instagram: {
       isExist: true,
       url: "https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=",
