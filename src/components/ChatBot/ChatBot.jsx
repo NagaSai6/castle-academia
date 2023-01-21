@@ -14,7 +14,7 @@ function SendMail(props) {
   };
   const configuration = {
     method: "post",
-    url: "https://castle-academia-server.onrender.com/send-mail-form-submission",
+    url: "https://server.castleacademia.com/send-mail-form-submission",
     // url : "http://localhost:9000/send-mail-form-submission",
     data: data,
   };

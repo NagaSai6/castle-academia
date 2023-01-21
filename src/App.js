@@ -38,22 +38,22 @@ function App() {
       if (decoded_data.user.role === "paid") {
         setPremiumUser(true);
       }
-      const configuration = {
-        method: "get",
-        // url: "https://castle-academia-server.onrender.com/google-sign-in",
-        url: `http://localhost:9000/check-user-role?id=${decoded_data.user._id}`,
-        headers: {
-          Authorization: `Bearer ${cookies["auth-token"]}`,
-        },
-      };
-      axios(configuration)
-        .then((res) => {
-          let role = res.data.data;
-          console.log(role);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
+      // const configuration = {
+      //   method: "get",
+     
+      //   url: `http://localhost:9000/check-user-role?id=${decoded_data.user._id}`,
+      //   headers: {
+      //     Authorization: `Bearer ${cookies["auth-token"]}`,
+      //   },
+      // };
+      // axios(configuration)
+      //   .then((res) => {
+      //     let role = res.data.data;
+      //     console.log(role);
+      //   })
+      //   .catch((err) => {
+      //     console.log(err);
+      //   });
     }
   }
 

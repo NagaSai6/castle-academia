@@ -37,10 +37,10 @@ export default function FormSection() {
   function handleFormSubmit(e){
     e.preventDefault();
 
-   
+    setFormTriggered(true);
     const configuration = {
       method: "post",
-      url: "https://castle-academia-server.onrender.com/send-mail-form-submission",
+      url: "https://server.castleacademia.com/send-mail-form-submission",
       // url : "http://localhost:9000/send-mail-form-submission",
       data: formData
     };
@@ -62,6 +62,7 @@ export default function FormSection() {
            
     }).catch((err)=>{
       setShowAlert (true);
+      setFormTriggered(false);
       setAlertMsg({key : 'danger', msg : "Invalid Form Submission Try again"})
       // setFormSubmit(false);
       // setErr(true);

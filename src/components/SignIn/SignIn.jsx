@@ -36,7 +36,7 @@ export default function SignIn() {
       // make  a post request
       const configuration = {
         method: "post",
-        url: "https://castle-academia-server.onrender.com/sign-in",
+        url: "https://server.castleacademia.com/sign-in",
         // url : "https://castle-academia-server.onrender.com",
         data: {
           email : formData.email,

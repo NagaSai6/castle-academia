@@ -48,7 +48,7 @@ export default function NavBar(props) {
     let token = resp.credential;
     const configuration = {
       method: "post",
-      url: "https://castle-academia-server.onrender.com/google-sign-in",
+      url: "https://server.castleacademia.com/google-sign-in",
       // url : "http://localhost:9000/google-sign-in",
       data: {token},
     };

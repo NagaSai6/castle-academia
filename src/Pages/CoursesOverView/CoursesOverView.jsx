@@ -13,7 +13,7 @@ export default function CoursesOverView() {
   useEffect(() => {
     const configuration = {
       method: "get",
-      url: "https://castle-academia-server.onrender.com/courses-overview",
+      url: "https://server.castleacademia.com/courses-overview",
     };
     axios(configuration).then((res) => {
       let data = res.data.data; // array of different courses
