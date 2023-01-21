@@ -8,7 +8,7 @@ export default function CourseLayout(props) {
 
   }
   return (
-    <Col md="3" className='mb-4' onClick={triggerDownload}>
+    <Col md="4" className='mb-4' onClick={triggerDownload}>
     <Card style={{ borderRadius: "15px" }} className="cs_card">
       <Card.Img className="cs_card_image" style={{ height: "100%"}} variant="top" src={require(`../CoursersOverView/${props.type}/resources/images/${props.data.image}`)} />
       <Card.Body className="cs_card_body">
