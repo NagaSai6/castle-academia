@@ -35,8 +35,7 @@ export const data = [
     experience: "12 Years experience in EdTech Industry",
     imageSrc: "director.jpeg",
     descHeader: "Director of Castle Academia",
-    desc:
-      "Mr. Namananda Sahu is the Director of a number of businesses. As a billion-dollar venture entrepreneur, he always believes that don't try until it gets right, try until it doesn't get wrong.",
+    desc: "Mr. Namananda Sahu is the Founder and Director of a number of companies and a visionary director of castle academia. He is one among that inspiring leader behind the company's success, with the ability to create opportunities and the determination to see that vision through. As a billion-dollar venture entrepreneur, he always believes that don't try until it gets right, try until it doesn't get wrong.",
     instagram: {
       isExist: true,
       url: "https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=",
@@ -63,7 +62,7 @@ export const data = [
     imageSrc: "ceo.jpeg",
     descHeader: "Founder & CEO of Castle Academia",
     desc:
-      "MD. Ayesha Roshini is founder & CEO of Castle academia.Being a young dynamic team member who counselled and supervised over 10,000 students from local colleges, IITs, NITs, and a few international projects. she always follows the saying, If it scares you, it might be a good thing to try",
+      "MD. Ayesha Roshini is founder & CEO of Castle academia.Being a young dynamic team member who counselled and supervised over 10,000 students from local colleges, IITs, NITs, and a few international projects. she always follows the saying, If it scares you, it might be a good thing to try.",
 
     instagram: {
       isExist: true,
