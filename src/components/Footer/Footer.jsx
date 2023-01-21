@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
           <div style={{ display: "flex" }} className="fc_common_div">
             <img src={fingerIcon} alt="" srcset="" className="fc_logo" />
-            <p className="mx-2 fc_text">Start Up Plan</p>
+            <p className="mx-2 fc_text">Startup Plan</p>
           </div>
           <div style={{ display: "flex" }} className="fc_common_div">
             <img src={fingerIcon} alt="" srcset="" className="fc_logo" />

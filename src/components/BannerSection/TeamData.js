@@ -6,7 +6,7 @@ export const data = [
     education: "MBA from Stanford University",
     experience: "12 Years experience in EdTech Industry",
     imageSrc: "chairman.jpeg",
-    descHeader: "Founder & Chairman of Castle Academia",
+    descHeader: "Chairman of Castle Academia",
     desc:
       "Rona Sahoo is a visionary chairman of castle academia and director of various other businesses. As an entrepreneur, she constantly encourages new talents to be daring and experiment with every ambition to make it a reality. She strongly believes that education is a passport to the future, tomorrow belongs to those who prepare for it now.",
 
@@ -34,7 +34,7 @@ export const data = [
     education: "MBA from Stanford University",
     experience: "12 Years experience in EdTech Industry",
     imageSrc: "director.jpeg",
-    descHeader: "Founder & Director of Castle Academia",
+    descHeader: "Director of Castle Academia",
     desc:
       "Mr. Namananda Sahu is the Director of a number of businesses. As a billion-dollar venture entrepreneur, he always believes that don't try until it gets right, try until it doesn't get wrong.",
     instagram: {
@@ -61,7 +61,7 @@ export const data = [
     education: "MBA from Stanford University",
     experience: "12 Years experience in EdTech Industry",
     imageSrc: "ceo.jpeg",
-    descHeader: "Founder & Chief Executive Officer of Castle Academia",
+    descHeader: "Founder & CEO of Castle Academia",
     desc:
       "MD. Ayesha Roshini is founder & CEO of Castle academia.Being a young dynamic team member who counselled and supervised over 10,000 students from local colleges, IITs, NITs, and a few international projects. she always follows the saying, If it scares you, it might be a good thing to try",
 
