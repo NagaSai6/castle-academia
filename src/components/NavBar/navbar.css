@@ -120,6 +120,9 @@ padding: 10px 30px 10px 60px !important;
 }
 
 @media screen and (max-width: 500px) {
+  .navbar_brand_img{
+    width: 245px;
+  }
   .navbar_counter_value {
     font-size: large;
   }

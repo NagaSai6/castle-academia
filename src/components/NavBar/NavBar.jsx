@@ -92,7 +92,7 @@ export default function NavBar(props) {
     <Navbar bg="dark" expand="md" className="navbar_container" fixed="top">
      
         <Navbar.Brand href="/">
-                <a href="/"><img src={Logo} alt="" srcset="" /></a>
+                <img className="navbar_brand_img" src={Logo} alt="" srcset="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
