@@ -3,6 +3,8 @@ import   "./resources/css/achieverssection.css";
 import dribbble_logo from "./resources/images/dribbble.svg";
 import google_logo from './resources/images/google.svg';
 import bb_logo from './resources/images/bb.svg';
+import paytm_logo from './resources/images/paytm.png';
+import byju_logo from './resources/images/byju.png';
 import amazon_logo from './resources/images/amazon.svg';
 import ms_logo from './resources/images/ms.svg';
 import linkedin_logo from "./resources/images/linkedin.svg";
@@ -29,11 +31,11 @@ export default function AchieversSection() {
         <Col className='as_logo_container mx-2 my-2'> 
             <img className='as_logo' src={ amazon_logo} alt="" srcset="" />
         </Col> 
-        {/* <Col className='as_logo_container mx-2 my-2' > 
-            <img src={ bb_logo} alt="" srcset="" />
-        </Col> */}
+        <Col className='as_logo_container mx-2 my-2'   > 
+            <img src={paytm_logo} alt="" srcset="" style={{width : "140px"}} />
+        </Col>
         <Col className='as_logo_container mx-2 my-2'> 
-            <img className='as_logo' src={ ms_logo} alt="" srcset="" />
+            <img className='as_logo' src={byju_logo} alt="" srcset="" style={{width : "140px"}} />
         </Col>
         <Col className='as_logo_container mx-2 my-2'> 
             <img className='as_logo' src={ linkedin_logo} alt="" srcset="" />
