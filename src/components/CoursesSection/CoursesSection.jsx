@@ -13,10 +13,10 @@ export default function CoursesSection() {
   const [isFlippedStartUp,setisFlippedStartUp] = useState(false)
   const [isFlippedAbroad,setisFlippedAbroad] = useState(false);
   return (
-    <div className="cs_container mx-auto">
+    <div className="cs_container mx-auto" id="courses_section">
       <h2>360° View on Courses We Offer</h2>
       <div class="horizontal_dotted_line"></div>
-      <p className="cs_desc mb-3">
+      <p className="cs_desc mb-4">
       The most crucial component of career transition is determining which professional route is meant for you and receiving expert's advice on that track
       </p>
 

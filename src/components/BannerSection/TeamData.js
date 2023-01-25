@@ -61,8 +61,7 @@ export const data = [
     experience: "12 Years experience in EdTech Industry",
     imageSrc: "ceo.jpeg",
     descHeader: "Founder & CEO of Castle Academia",
-    desc:
-      "MD. Ayesha Roshini is founder & CEO of Castle academia.Being a young dynamic team member who counselled and supervised over 10,000 students from local colleges, IITs, NITs, and a few international projects. she always follows the saying, If it scares you, it might be a good thing to try.",
+    desc: '<p className="bs_about_carousel_desc">MD. Ayesha Roshini is founder & CEO of Castle academia.Being a young dynamic team member who counselled and supervised over 10,000 students from local colleges, IITs, NITs, and a few international projects. she always follows the saying, <b>  If it scares you, it might be a good thing to try </b>.</p>',
 
     instagram: {
       isExist: true,

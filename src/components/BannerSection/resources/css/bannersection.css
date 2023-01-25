@@ -57,6 +57,15 @@
   height: 60px !important;
   margin-top: 30px;
   border: 0 ;
+  display: flex;
+  text-align: center;
+  justify-content: center    ;
+  align-items: center;
+  text-decoration: none;
+  align-content: center;
+}
+.bs_text-button:hover{
+  color: #fff;
 }
 .bs_team_member_card {
   width: 585px !important;

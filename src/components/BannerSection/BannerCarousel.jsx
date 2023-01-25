@@ -4,7 +4,7 @@ import facebookLogo from "./resources/images/facebook.png";
 import linkedInLogo from "./resources/images/linkedin.png";
 import instagramLogo from "./resources/images/instagram.png";
 import whatsappLogo from "./resources/images/whatsapp.png";
-
+import { Markup } from 'interweave';
 
 export default function BannerCarousel(props) {
   if (props.teamData.length) {
@@ -63,7 +63,7 @@ export default function BannerCarousel(props) {
 
               <div className="bs_desc_section mt-2">
                 <h6>{item.descHeader}</h6>
-                <p className="bs_about_carousel_desc">{item.desc}</p>
+                <Markup  content={item.desc}/>
               </div>
             </Card.Body>
           </Card>
