@@ -1,4 +1,4 @@
-#Deployment Status
+# Deployment Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3792ad03-c297-458c-8a65-f2cdce8384ed/deploy-status?branch=main)](https://app.netlify.com/sites/castle-academia/deploys)
 
 # Getting Started with Create React App
