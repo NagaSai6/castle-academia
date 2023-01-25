@@ -21,7 +21,7 @@ export default function CoursesSection() {
       </p>
 
       <Row>
-        <Col md={4}>
+        <Col md={4} className="my-3">
           <ReactCardFlip infinite={false}  isFlipped={isFlipped} flipDirection="horizontal" containerStyle={{transition : 'smooth'}}>
           <Card onMouseEnter={()=> setIsFlipped(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
             <Card.Img className="cs_card_image" variant="top" src={crt_logo} height="2000"/>
@@ -55,7 +55,7 @@ export default function CoursesSection() {
         </Col>
 
 
-        <Col md={4}>
+        <Col md={4} className="my-3">
         <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlippedStartUp}  containerStyle={{transition : 'smooth'}}>
           <Card onMouseEnter={()=> setisFlippedStartUp(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
             <Card.Img className="cs_card_image" variant="top" src={startup_plan_logo} />
@@ -87,7 +87,7 @@ export default function CoursesSection() {
           </div>
         </Col>
 
-        <Col md={4}>
+        <Col md={4} className="my-3">
         <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlippedAbroad}  containerStyle={{transition : 'smooth'}}>
           <Card onMouseEnter={()=> setisFlippedAbroad(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
             <Card.Img className="cs_card_image" variant="top" src={abroad_studies_logo} />

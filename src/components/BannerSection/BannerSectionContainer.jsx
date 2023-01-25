@@ -7,7 +7,7 @@ export default function BannerSectionContainer() {
   return (
     <div>
       <Row className="bs_parent-container g-0 align-items-center">
-        <Col xs="12" lg ="6" cclassName="bs_text-container">
+        <Col xs="12" lg ="6" className="bs_text-container">
           <h1 className="bs_text_desc2">2.5K+ students</h1>
           <h1 className="bs_text_desc2">Kickstarted career with us </h1>
           <h5 className="bs_text_desc1"><b>"IF IT SCARES YOU, IT MIGHT BE A GOOD THING TO TRY "</b></h5>

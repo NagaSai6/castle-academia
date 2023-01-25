@@ -72,7 +72,10 @@
   color: #2d2d2d !important ;
 }
 .cs_back_card_body_button_container{
-  margin-top: 50px !important;
+  position: absolute;
+  left : 22%;
+  bottom: 10%;
+  /* margin-top: 50px !important; */
 }
 .cs_back_card_body_ul {
   padding-left: 19px;
@@ -97,6 +100,7 @@ ul.cs_back_card_body_ul {
   background: #000;
   height: 300px !important;
   width: 300px !important;
+  position: relative;
 }
 .cs_back_card_body {
   border-radius: 15px;
