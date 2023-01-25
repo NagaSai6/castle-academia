@@ -8,7 +8,7 @@ export const data = [
     imageSrc: "chairman.jpeg",
     descHeader: "Chairman of Castle Academia",
     desc:
-      "Rona Sahoo is a visionary chairman of castle academia and director of various other businesses. As an entrepreneur, she constantly encourages new talents to be daring and experiment with every ambition to make it a reality. She strongly believes that education is a passport to the future, tomorrow belongs to those who prepare for it now.",
+      "<p className='bs_about_carousel_desc'>Rona Sahoo is a visionary chairman of castle academia and director of various other businesses. As an entrepreneur, she constantly encourages new talents to be daring and experiment with every ambition to make it a reality. She strongly believes that <b> Education is a passport to the future, tomorrow belongs to those who prepare for it now. </b></p>",
 
     instagram: {
       isExist: true,
@@ -35,7 +35,7 @@ export const data = [
     experience: "12 Years experience in EdTech Industry",
     imageSrc: "director.jpeg",
     descHeader: "Director of Castle Academia",
-    desc: "Mr. Namananda Sahu is the Founder and Director of a number of companies and a visionary director of castle academia. He is one among that inspiring leader behind the company's success, with the ability to create opportunities and the determination to see that vision through. As a billion-dollar venture entrepreneur, he always believes that don't try until it gets right, try until it doesn't get wrong.",
+    desc: "<p className='bs_about_carousel_desc'>Mr. Namananda Sahu is the Founder and Director of a number of companies and a visionary director of castle academia. He is one among that inspiring leader behind the company's success, with the ability to create opportunities and the determination to see that vision through. As a billion-dollar venture entrepreneur, he always believes that <b>Don't try until it gets right, try until it doesn't get wrong. </b></p>",
     instagram: {
       isExist: true,
       url: "https://instagram.com/castle_academia?igshid=Yzg5MTU1MDY=",
