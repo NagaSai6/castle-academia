@@ -24,7 +24,7 @@ export default function FactsSection() {
           </div>
 
              <div className="">
-             <p className="fs_cards_desc mt-auto">Number of students successfully enrolled</p>
+             <p className="fs_cards_desc mt-auto">Number of students successfully enrolled in each domain.</p>
              </div>
             </div>
           </Col>

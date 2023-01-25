@@ -17,9 +17,9 @@ export const testimonialData = [
     },
     {
 
-        name : "sushma naik",
+        name : "Sushma naik",
         designation : "Consultant",
-        testimonial : "I've always wanted to establish a business, and this platform not only helped me understand the startup ecosystem but also allowed me to communicate closely with the founders and chairs of well-known startups.",
+        testimonial : "I've always wanted to establish a business, and this platform not only helped me understand the startup ecosystem but also allowed me to communicate closely with the founders and chairmans of well-known startups.",
         imageUrl : "https://randomuser.me/api/portraits/med/men/87.jpg"
 
     }

@@ -42,9 +42,9 @@ export default function CoursesSection() {
                 <li className="cs_back_card_body_points">MOCK INTERVIEW</li>
                 <li className="cs_back_card_body_points">RESUME REVIEW</li>
               </ul>
-               <div className="d-flex justify-content-center cs_back_card_body_button_container">
+               {/* <div className="d-flex justify-content-center cs_back_card_body_button_container">
                <a role={'button'} href={'https://www.africau.edu/images/default/sample.pdf'} download className="cs_back_card_body_button">Read More</a>
-               </div>
+               </div> */}
             </Card.Body>
           </Card>
           </ReactCardFlip>
@@ -76,9 +76,9 @@ export default function CoursesSection() {
                 <li className="cs_back_card_body_points">1:1 SESSION WITH CEO</li>
                 <li className="cs_back_card_body_points">MOCK ON PITCHING</li>
               </ul>
-               <div className="d-flex justify-content-center cs_back_card_body_button_container">
+               {/* <div className="d-flex justify-content-center cs_back_card_body_button_container">
                <a role={'button'} href={'https://www.africau.edu/images/default/sample.pdf'} download className="cs_back_card_body_button">Read More</a>
-               </div>
+               </div> */}
             </Card.Body>
           </Card>
           </ReactCardFlip>
@@ -108,15 +108,15 @@ export default function CoursesSection() {
                 <li className="cs_back_card_body_points">UNIVERSITY SHORTLISTING</li>
                 <li className="cs_back_card_body_points">VISA APPROVAL</li>
               </ul>
-               <div className="d-flex justify-content-center cs_back_card_body_button_container">
+               {/* <div className="d-flex justify-content-center cs_back_card_body_button_container">
                <a role={'button'} href={'https://www.africau.edu/images/default/sample.pdf'} download className="cs_back_card_body_button">Read More</a>
-               </div>
+               </div> */}
             </Card.Body>
           </Card>
           </ReactCardFlip>
           <div className="cs_course_desc mx-auto" style={{width : "300px"}}>
             <p> Discover and interact with Alumni of your dream college who once travelled the same route as you.
-We provide A-Z overseas services, from assisting you in selecting the best university to enrolling in it
+We provide A-Z overseas services, from assisting you in selecting the best university to getting enrolled in it.
 </p>
           </div>
         </Col>

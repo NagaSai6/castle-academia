@@ -84,7 +84,7 @@ export default function FormSection() {
             {/* {(show && !isErr) ? <Alert onClose={() => setShow(false)} key={'sucess'} variant="success" dismissible> Submitted Successfully </Alert> : ''}
             {(show && isErr) ?  <Alert onClose={() => setShow(false)} key={'danger'} variant="danger" dismissible> Something is went wrong </Alert> : ''} */}
             <Form onSubmit={handleFormSubmit}>
-                <h2 className="my-3">Enter Details</h2>
+                <h2 className="my-3">Get Free Consultation and 30% OFF</h2>
               <Row>
                 <Col>
                   <Form.Group className="mb-3" controlId="">
