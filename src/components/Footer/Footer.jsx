@@ -83,7 +83,7 @@ export default function Footer() {
           <div style={{ display: "flex",textDecoration : "none" }} className="fc_common_div">
           <a href="tel:+911238948" style={{display : "flex"}}>
               <img src={contactLogo} alt="" srcset="" className="fc_logo" />
-             <p className="mx-1 fc_text">+919959652866 </p>
+             <p className="mx-1 fc_text">+918125875058 </p>
               </a>
           </div>
           <div style={{ display: "flex" ,textDecoration : "none"}} className="fc_common_div">

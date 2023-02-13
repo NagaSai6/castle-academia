@@ -68,7 +68,7 @@ export default function NavBar(props) {
     setTimeout(() => {
       window.google.accounts.id.initialize({
         client_id:
-          "928028449034-u237u6o9dc52fnbl562vmitb1ce9i78g.apps.googleusercontent.com",
+          "14703353359-l8dlidoi9af2ob762s508btjd5o4q3t7.apps.googleusercontent.com",
         callback: handleCallbackResponse,
       });
 
