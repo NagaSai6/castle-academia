@@ -11,9 +11,9 @@ export default function BannerSectionContainer() {
           <h1 className="bs_text_desc2">2.5K+ students</h1>
           <h1 className="bs_text_desc2">Kickstarted career with us </h1>
           <h5 className="bs_text_desc1"><b>"IF IT SCARES YOU, IT MIGHT BE A GOOD THING TO TRY "</b></h5>
-          <h5 className="bs_text_desc1">
+          <h1 className="bs_text_desc1">
           The Castle Academia  is an EdTech startup with the team full of expertise who had worked closely with IIT Bombay,IIT Madras,IIT Kanpur, IIT Kharagpur  IIT Roorkee, BITS Pilani, NITs & 20+ colleges national wide.
-          </h5>
+          </h1>
           {/* <h5 className="bs_text_desc1">
           
           </h5> */}

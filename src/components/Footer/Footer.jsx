@@ -31,10 +31,10 @@ export default function Footer() {
       <Row className="fc_sub_container g-0">
         <Col style={{ justifyContent: "center" }}>
            <div className="my-2">
-           <img src={Logo} alt="" srcset="" />
+           <img src={Logo} alt="castle-academia-logo" srcset="" />
            </div>
 
-          <p style={{ display: "inline-flex",color : "#fff" }}>
+          <p style={{ display: "inline-flex",color : "#fff" ,fontSize:'1rem'}}>
             Copyright @ {year} Castle Academia.
           </p>
           <p style={{color : "#fff" }}>All rights reserved.</p>

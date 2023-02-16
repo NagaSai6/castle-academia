@@ -26,19 +26,19 @@ export default function AchieversSection() {
             <img src={ dribbble_logo} alt="" srcset="" />
         </Col> */}
         <Col className='as_logo_container mx-2 my-2'> 
-            <img className='as_logo' src={ google_logo} alt="" srcset="" />
+            <img className='as_logo' src={ google_logo} alt="castle-academia-logo" srcset="" />
         </Col>
         <Col className='as_logo_container mx-2 my-2'> 
-            <img className='as_logo' src={ amazon_logo} alt="" srcset="" />
+            <img className='as_logo' src={ amazon_logo} alt="castle-academia-logo" srcset="" />
         </Col> 
         <Col className='as_logo_container mx-2 my-2'   > 
-            <img src={paytm_logo} alt="" srcset="" style={{width : "140px"}} />
+            <img src={paytm_logo} alt="castle-academia-logo" srcset="" style={{width : "140px"}} />
         </Col>
         <Col className='as_logo_container mx-2 my-2'> 
-            <img className='as_logo' src={byju_logo} alt="" srcset="" style={{width : "140px"}} />
+            <img className='as_logo' src={byju_logo} alt="castle-academia-logo" srcset="" style={{width : "140px"}} />
         </Col>
         <Col className='as_logo_container mx-2 my-2'> 
-            <img className='as_logo' src={ linkedin_logo} alt="" srcset="" />
+            <img className='as_logo' src={ linkedin_logo} alt="castle-academia-logo" srcset="" />
         </Col>
       </Row>
     </div>

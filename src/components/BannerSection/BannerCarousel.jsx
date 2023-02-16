@@ -12,24 +12,24 @@ export default function BannerCarousel(props) {
       return (
         <Carousel.Item>
           <Card style={{ position: "relative" }}>
-            <Card.Img variant="top" className="bs_team_mate_img" src={require(`./resources/images/${item.imageSrc}`)} />
+            <Card.Img variant="top" className="bs_team_mate_img" src={require(`./resources/images/${item.imageSrc}`)} alt="castle-academia-image" />
             <h4 className="bs_team_title">{item.name}</h4>
             <h4 className="bs_team_designation">{item.designation}</h4>
             <div className="bs_team_social_media">
             
               <a className="bs_social_media_button-first-child" href={item.whatsapp.url}>
-              <img className="bs_social_media_icon" src={whatsappLogo} />
+              <img className="bs_social_media_icon" src={whatsappLogo} alt="castle-academia-logo" />
                 
               </a>
               <a className="bs_social_media_button" href={item.instagram.url}>
-                <img className="bs_social_media_icon" src={instagramLogo} />
+                <img className="bs_social_media_icon" src={instagramLogo} alt="castle-academia-logo" />
               </a>
               <a className="bs_social_media_button" href={item.linkedin.url}>
-                <img className="bs_social_media_icon" src={linkedInLogo} />
+                <img className="bs_social_media_icon" src={linkedInLogo} alt="castle-academia-logo" />
               </a>
 
               <a target="_blank"  className="bs_social_media_button" href={item.facebook.url}>
-              <img className="bs_social_media_icon" src={facebookLogo} />
+              <img className="bs_social_media_icon" src={facebookLogo} alt="castle-academia-logo" />
               </a>
             </div>
             <Card.Body>

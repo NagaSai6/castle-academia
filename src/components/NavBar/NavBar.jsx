@@ -17,7 +17,7 @@ import notificationLogo from "./resources/images/bell_ring.svg";
 
 
 import "./navbar.css";
-import { Col } from "react-bootstrap";
+
 
 export default function NavBar(props) {
   const cookiesz = new Cookies();
@@ -92,7 +92,7 @@ export default function NavBar(props) {
     <Navbar bg="dark" expand="md" className="navbar_container" fixed="top">
      
         <Navbar.Brand href="/">
-                <img className="navbar_brand_img" src={Logo} alt="" srcset="" />
+                <img className="navbar_brand_img" src={Logo} alt="castle-academia-logo" srcset="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse
@@ -109,7 +109,7 @@ export default function NavBar(props) {
           </Nav>
           <Nav className="mr-auto" >
           <div className="saleLogoContainer" >
-           <img src={saleLogo} alt="" srcset="" className="saleLogo" />
+           <img src={saleLogo} alt="castle-academia-sale-logo" srcset="" className="saleLogo" />
            </div>
           </Nav>
           <Nav className="ml-auto">

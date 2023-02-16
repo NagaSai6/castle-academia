@@ -16,15 +16,15 @@ export default function CoursesSection() {
     <div className="cs_container mx-auto" id="courses_section">
       <h2>360° View on Courses We Offer</h2>
       <div class="horizontal_dotted_line"></div>
-      <p className="cs_desc mb-4">
+      <h2 className="cs_desc mb-4">
       The most crucial component of career transition is determining which professional route is meant for you and receiving expert's advice on that track
-      </p>
+      </h2>
 
       <Row>
         <Col md={4} className="my-3">
           <ReactCardFlip infinite={false}  isFlipped={isFlipped} flipDirection="horizontal" containerStyle={{transition : 'smooth'}}>
           <Card onMouseEnter={()=> setIsFlipped(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
-            <Card.Img className="cs_card_image" variant="top" src={crt_logo} height="2000"/>
+            <Card.Img className="cs_card_image" variant="top" src={crt_logo} height="2000" alt="castle-academia-logo"/>
             <Card.Body className="cs_card_body">
               <Card.Text className="cs_card_text">CRT TRAINING</Card.Text>
             </Card.Body>
@@ -58,7 +58,7 @@ export default function CoursesSection() {
         <Col md={4} className="my-3">
         <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlippedStartUp}  containerStyle={{transition : 'smooth'}}>
           <Card onMouseEnter={()=> setisFlippedStartUp(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
-            <Card.Img className="cs_card_image" variant="top" src={startup_plan_logo} />
+            <Card.Img className="cs_card_image" variant="top" src={startup_plan_logo} alt="castle-academia-logo" />
             <Card.Body className="cs_card_body">
               <Card.Text className="cs_card_text">STARTUP PLAN</Card.Text>
             </Card.Body>
@@ -90,7 +90,7 @@ export default function CoursesSection() {
         <Col md={4} className="my-3">
         <ReactCardFlip flipSpeedFrontToBack={0.6} isFlipped={isFlippedAbroad}  containerStyle={{transition : 'smooth'}}>
           <Card onMouseEnter={()=> setisFlippedAbroad(true)}   style={{borderRadius : "25px",width : "",border:'0'}}  className="cs_card mx-auto">
-            <Card.Img className="cs_card_image" variant="top" src={abroad_studies_logo} />
+            <Card.Img className="cs_card_image" variant="top" src={abroad_studies_logo} alt="castle-academia-logo" />
             <Card.Body className="cs_card_body">
               <Card.Text className="cs_card_text">ABROAD STUDIES</Card.Text>
             </Card.Body>

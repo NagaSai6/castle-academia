@@ -89,7 +89,7 @@ function App() {
         </Routes>
         <div className="whatsappBot">
           <a target={"_blank"} href="https://chat.whatsapp.com/IpW1IfXOmv4EVIHM61wITY">
-            <img style={{ width: "36px" }} src={whatsappLogo} />
+            <img style={{ width: "36px" }} src={whatsappLogo} alt="castle-academia-logo" />
           </a>
         </div>
         <ChatBotForm />
